@@ -1,0 +1,14 @@
+=begin
+ 第三方类库
+=end
+#source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+use_frameworks!
+
+link_with 'JuYou', 'JuYou Tests'
+
+pod 'MJRefresh'
+pod 'JGProgressHUD'
+pod 'SDWebImage'
+#网络请求库
+pod 'Alamofire'
