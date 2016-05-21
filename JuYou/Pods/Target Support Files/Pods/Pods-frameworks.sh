@@ -85,12 +85,14 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/FDFullscreenPopGesture.framework"
   install_framework "Pods/JGProgressHUD.framework"
   install_framework "Pods/MJRefresh.framework"
   install_framework "Pods/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/FDFullscreenPopGesture.framework"
   install_framework "Pods/JGProgressHUD.framework"
   install_framework "Pods/MJRefresh.framework"
   install_framework "Pods/SDWebImage.framework"

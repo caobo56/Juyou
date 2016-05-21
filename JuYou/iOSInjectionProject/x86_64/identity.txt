@@ -1,0 +1,2 @@
+/Users/caobo/Library/Developer/Xcode/DerivedData/JuYou-cqoaqdaekwytktbmgrpvlmfhmzcz/Build/Products/Debug-iphonesimulator/JuYou.app
+iPhone Distribution: PalmSphere (Beijing) Technology, Inc.

@@ -10,6 +10,9 @@
 		7E18E0F80119EA6BC0879440 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BE6D758F347E1E3CB70D87 /* Pods.framework */; };
 		A80754251CEA9F56004ABC0D /* JYConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754241CEA9F56004ABC0D /* JYConstant.swift */; };
 		A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754261CEAA709004ABC0D /* JYAPIClient.swift */; };
+		A80DA2631CEF06D100E7FE84 /* CoreAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */; };
+		A80DA2651CEF0EEF00E7FE84 /* UIView+screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */; };
+		A80DA2671CEF0FCB00E7FE84 /* JYCuxtomTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */; };
 		A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C3E1CEC008300F25778 /* MineViewController.swift */; };
 		A8105C461CEC3EFB00F25778 /* UIView+DDAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C451CEC3EFB00F25778 /* UIView+DDAddition.swift */; };
 		A8105C481CEC527D00F25778 /* UIButton+Typesetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C471CEC527D00F25778 /* UIButton+Typesetting.swift */; };
@@ -50,6 +53,7 @@
 		A8CFF01C1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */; };
 		A8CFF01D1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */; };
 		A8CFF01E1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */; };
+		A8E0D3291CEF041200BD77AC /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E0D3281CEF041200BD77AC /* UIImage+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,9 @@
 		547493131F3A54D7BEB20001 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A80754241CEA9F56004ABC0D /* JYConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYConstant.swift; sourceTree = "<group>"; };
 		A80754261CEAA709004ABC0D /* JYAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYAPIClient.swift; sourceTree = "<group>"; };
+		A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAnimationEffect.swift; sourceTree = "<group>"; };
+		A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+screenshots.swift"; sourceTree = "<group>"; };
+		A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYCuxtomTool.swift; sourceTree = "<group>"; };
 		A8105C3E1CEC008300F25778 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		A8105C451CEC3EFB00F25778 /* UIView+DDAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DDAddition.swift"; sourceTree = "<group>"; };
 		A8105C471CEC527D00F25778 /* UIButton+Typesetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Typesetting.swift"; sourceTree = "<group>"; };
@@ -121,6 +128,7 @@
 		A8BA47721CEDB64600FB8916 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
 		A8BA47731CEDB64600FB8916 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
 		A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
+		A8E0D3281CEF041200BD77AC /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		B2BE6D758F347E1E3CB70D87 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92A0CBB81C7838B662D31E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -188,6 +196,10 @@
 				A8105C471CEC527D00F25778 /* UIButton+Typesetting.swift */,
 				A8105C491CEC58D500F25778 /* UImage+Size.swift */,
 				A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */,
+				A8E0D3281CEF041200BD77AC /* UIImage+Color.swift */,
+				A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */,
+				A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */,
+				A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */,
 			);
 			path = Pubilc;
 			sourceTree = "<group>";
@@ -644,14 +656,18 @@
 				A8105C461CEC3EFB00F25778 /* UIView+DDAddition.swift in Sources */,
 				A8BA47681CED9C8400FB8916 /* CyclePictureView.swift in Sources */,
 				A8105CBD1CECB60800F25778 /* HomeViewController.swift in Sources */,
+				A80DA2671CEF0FCB00E7FE84 /* JYCuxtomTool.swift in Sources */,
 				A8105CB91CECB5DC00F25778 /* FilterFreedoms.swift in Sources */,
 				A8105C481CEC527D00F25778 /* UIButton+Typesetting.swift in Sources */,
+				A80DA2631CEF06D100E7FE84 /* CoreAnimationEffect.swift in Sources */,
+				A80DA2651CEF0EEF00E7FE84 /* UIView+screenshots.swift in Sources */,
 				A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */,
 				A8CFF01C1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */,
 				A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */,
 				A8BA47671CED9C8400FB8916 /* CyclePictureCell.swift in Sources */,
 				A8105C701CEC636E00F25778 /* DestinationHots.swift in Sources */,
 				A87C1DFB1CE9A3A200E0285F /* JYNetWorking.swift in Sources */,
+				A8E0D3291CEF041200BD77AC /* UIImage+Color.swift in Sources */,
 				A8105C721CEC63AD00F25778 /* DestinationViewController.swift in Sources */,
 				A8105C601CEC628100F25778 /* Reflect+Property.swift in Sources */,
 				A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */,

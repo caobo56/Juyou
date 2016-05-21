@@ -12,3 +12,5 @@ pod 'JGProgressHUD'
 pod 'SDWebImage'
 #网络请求库
 pod 'Alamofire'
+
+pod 'FDFullscreenPopGesture'
