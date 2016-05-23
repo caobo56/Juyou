@@ -12,7 +12,7 @@ import MJRefresh
 let IsHotsCellW=Screen_weight
 let IsHotsCellH=(Screen_weight/690*360+62)
 
-class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDataSource{
+class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDataSource,CyclePictureViewDelegate{
     //MARK: - property 属性
     var categorys:FilterFreedoms = FilterFreedoms.init()
     var isHots:FilterFreedoms = FilterFreedoms.init()
@@ -63,8 +63,8 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
         self.tableView.mj_header.automaticallyChangeAlpha = yes
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.view.addSubview(self.tableView)
+        self.headView.cyclePictureView.delegate = self
         self.tableView.tableHeaderView = self.headView
-        
         let footerView:UIView = UIView.init(frame: CGRectMake(Screen_weight, 50, Screen_weight, TabBarH*1.5))
         footerView.backgroundColor = UIColor.whiteColor()
         self.tableView.tableFooterView = footerView
@@ -127,8 +127,16 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
     //选择一行
     func tableView(tableViews: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         let detail:HomeDetailViewController = HomeDetailViewController.init()
+        detail.freedomDetailID = self.isHots.filterFreedoms![indexPath.row].id!
         self.navigationController?.pushViewController(detail, animated: yes)
     }
 
+    
+    //MARK: - cyclePictureView代理方法
+    func cyclePictureView(cyclePictureView: CyclePictureView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let detail:HomeDetailViewController = HomeDetailViewController.init()
+        detail.freedomDetailID = self.categorys.filterFreedoms![indexPath.row].id!
+        self.navigationController?.pushViewController(detail, animated: yes)
+    }
 }
 

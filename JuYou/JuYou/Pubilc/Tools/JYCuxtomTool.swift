@@ -9,13 +9,13 @@
 import UIKit
 
 class JYCuxtomTool: NSObject {
-    /**
+    
+    /** 
      ** lineView:       需要绘制成虚线的view
      ** lineLength:     虚线的宽度
      ** lineSpacing:    虚线的间距
      ** lineColor:      虚线的颜色
      **/
-    
     class func drawDashLine(lineView: UIView, lineLength: Int, lineSpacing: Int, lineColor: UIColor, startPoint: CGPoint, endPoint: CGPoint) {
         let shapeLayer: CAShapeLayer = CAShapeLayer.init()
         shapeLayer.bounds = lineView.bounds

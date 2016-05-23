@@ -11,6 +11,8 @@ import UIKit
 class HomeDetailViewController: BasicViewController {
     //MARK: - property 属性
     var freedomDetail:FreedomDetail = FreedomDetail.init()
+    var freedomDetailID:String = ""
+    
     var topView:JYHomeHeadView = JYHomeHeadView.init(frame: CGRectZero)
 
     
@@ -49,7 +51,7 @@ class HomeDetailViewController: BasicViewController {
     //加载数据
     func loadWebData(){
         weak var weakSelf = self
-        let parmas:NSDictionary = ["id":"210010"]
+        let parmas:NSDictionary = ["id":freedomDetailID]
         searchFreedomById(parmas,sucess:{ (datas) in
             if (!datas.isEqual(NSNull()) ) {
                 guard let dicts:NSDictionary = (datas as! NSDictionary) else {return}
@@ -59,7 +61,6 @@ class HomeDetailViewController: BasicViewController {
             },failure: { (errorMsg) in
                 
         })
-
     }
     
     func backBtnPress() {

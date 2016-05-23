@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class ISHotHeadView: UIView ,CyclePictureViewDelegate{
+class ISHotHeadView: UIView{
     //MARK: - property 属性
 
     var imageURLArray: [String] = ["http://101.200.164.224/juyou_statics/data/img/freedom/210015.jpg"]
@@ -36,7 +36,6 @@ class ISHotHeadView: UIView ,CyclePictureViewDelegate{
         self.cyclePictureView = CyclePictureView(frame: CGRectMake(0, 0, Screen_weight, DestCellH), imageURLArray: self.imageURLArray)
         self.addSubview(self.cyclePictureView)
         self.cyclePictureView.backgroundColor = UIColor.whiteColor()
-        self.cyclePictureView.delegate = self
         self.cyclePictureView.timeInterval = 2
         self.cyclePictureView.pageControlAliment = .RightBottom
         
@@ -63,7 +62,6 @@ class ISHotHeadView: UIView ,CyclePictureViewDelegate{
         
     }
     
-    
     func loadData(fits:[Filterfreedom]){
         imageURLArray.removeAll()
         for fit:Filterfreedom in fits{
@@ -72,8 +70,5 @@ class ISHotHeadView: UIView ,CyclePictureViewDelegate{
         cyclePictureView.imageURLArray = imageURLArray
     }
     
-    //MARK: - cyclePictureView代理方法
-    func cyclePictureView(cyclePictureView: CyclePictureView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
-        print(indexPath.item)
-    }
+
 }
