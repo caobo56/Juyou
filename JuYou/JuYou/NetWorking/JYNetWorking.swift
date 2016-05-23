@@ -28,14 +28,14 @@ class JYNetWorking: NSObject {
     }
 
     func getRequest(interfaceName:String,params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
-        rootVC!.showLoadingHUD()
+        RootVC!.showLoadingHUD()
         Alamofire.request(.POST, SERVER_URL(interfaceName),parameters: params as? [String : AnyObject]).responseJSON() {
             response in
-            rootVC?.hideAllHUD()
+            RootVC?.hideAllHUD()
             guard let value = response.result.value else {
                 sucess(data: NSNull())
                 failure(data: FAILURE_CODE)
-                rootVC!.showHUDWithText("请求发送失败，请稍后重试！")
+                RootVC!.showHUDWithText("请求发送失败，请稍后重试！")
                 return
             }
             
@@ -47,7 +47,7 @@ class JYNetWorking: NSObject {
             }else{
                 if (json["errorCode"].intValue > HUDERROR_CODE){
                    //此处为请求链接成功，后台失败errorCode>HUDERROR_CODE时，需弹出HUD
-                    rootVC!.showHUDWithText(json["errorMsg"].string!)
+                    RootVC!.showHUDWithText(json["errorMsg"].string!)
                 }//可能会改为 switch-case 看具体业务需求弹相应的HUD
                 sucess(data: NSNull())
                 failure(data: FAILURE_CODE)

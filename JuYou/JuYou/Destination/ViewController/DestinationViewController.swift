@@ -12,7 +12,7 @@ import MJRefresh
 let DestCellW=Screen_weight
 let DestCellH=Screen_weight/690*360
 
-class DestinationViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class DestinationViewController: BasicViewController,UITableViewDelegate,UITableViewDataSource {
     //MARK: - property 属性
     var dests:DestinationHots = DestinationHots.init()
     var topView:JYHomeHeadView = JYHomeHeadView.init(frame: CGRectZero)
@@ -30,6 +30,7 @@ class DestinationViewController: UIViewController,UITableViewDelegate,UITableVie
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        NavBarVC.hidesBottomBar(NO)
         self.loadDestinationSearchHot()
     }
     

@@ -40,6 +40,8 @@
 		A87C1DDD1CE9A24D00E0285F /* JuYouTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C1DDC1CE9A24D00E0285F /* JuYouTests.swift */; };
 		A87C1DE81CE9A24E00E0285F /* JuYouUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C1DE71CE9A24E00E0285F /* JuYouUITests.swift */; };
 		A87C1DFB1CE9A3A200E0285F /* JYNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C1DFA1CE9A3A200E0285F /* JYNetWorking.swift */; };
+		A8A45A091CF2969D00B33DFD /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A081CF2969D00B33DFD /* HomeDetailViewController.swift */; };
+		A8A45A0B1CF2987E00B33DFD /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A0A1CF2987E00B33DFD /* BasicViewController.swift */; };
 		A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA47161CED432F00FB8916 /* IsHotCell.swift */; };
 		A8BA47191CED928700FB8916 /* ISHotHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA47181CED928700FB8916 /* ISHotHeadView.swift */; };
 		A8BA47661CED9C8400FB8916 /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA47631CED9C8400FB8916 /* AuxiliaryModels.swift */; };
@@ -113,6 +115,8 @@
 		A87C1DE71CE9A24E00E0285F /* JuYouUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuYouUITests.swift; sourceTree = "<group>"; };
 		A87C1DE91CE9A24E00E0285F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A87C1DFA1CE9A3A200E0285F /* JYNetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYNetWorking.swift; sourceTree = "<group>"; };
+		A8A45A081CF2969D00B33DFD /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		A8A45A0A1CF2987E00B33DFD /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		A8BA47161CED432F00FB8916 /* IsHotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsHotCell.swift; sourceTree = "<group>"; };
 		A8BA47181CED928700FB8916 /* ISHotHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISHotHeadView.swift; sourceTree = "<group>"; };
 		A8BA47631CED9C8400FB8916 /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuxiliaryModels.swift; sourceTree = "<group>"; };
@@ -200,6 +204,7 @@
 				A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */,
 				A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */,
 				A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */,
+				A8A45A0A1CF2987E00B33DFD /* BasicViewController.swift */,
 			);
 			path = Pubilc;
 			sourceTree = "<group>";
@@ -351,6 +356,7 @@
 			isa = PBXGroup;
 			children = (
 				A8105CBC1CECB60800F25778 /* HomeViewController.swift */,
+				A8A45A081CF2969D00B33DFD /* HomeDetailViewController.swift */,
 			);
 			path = VIewController;
 			sourceTree = "<group>";
@@ -651,6 +657,7 @@
 				A8105C5E1CEC628100F25778 /* Reflect+Class.swift in Sources */,
 				A87C1DC61CE9A24D00E0285F /* AppDelegate.swift in Sources */,
 				A8105C611CEC628100F25778 /* Reflect+Type.swift in Sources */,
+				A8A45A091CF2969D00B33DFD /* HomeDetailViewController.swift in Sources */,
 				A8105C7C1CEC7EF200F25778 /* DestCell.swift in Sources */,
 				A8105C621CEC628100F25778 /* Reflect.swift in Sources */,
 				A8105C461CEC3EFB00F25778 /* UIView+DDAddition.swift in Sources */,
@@ -673,6 +680,7 @@
 				A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */,
 				A8105C5F1CEC628100F25778 /* Reflect+Other.swift in Sources */,
 				A8105C5D1CEC628100F25778 /* Reflect+Convert.swift in Sources */,
+				A8A45A0B1CF2987E00B33DFD /* BasicViewController.swift in Sources */,
 				A8105C5B1CEC628100F25778 /* Reflect+ArcFile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

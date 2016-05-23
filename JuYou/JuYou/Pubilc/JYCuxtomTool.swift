@@ -38,13 +38,13 @@ class JYCuxtomTool: NSObject {
     }
     
     /**
-     @method 获取指定宽度情况ixa，字符串value的高度
+     @method 获取指定宽度情况下，字符串value的高度
      @param value 待计算的字符串
      @param fontSize 字体的大小
      @param andWidth 限制字符串显示区域的宽度
      @result float 返回的高度
      */
-    func textHeightFromTextString(text: String, textWidth: CGFloat, fontSize: CGFloat, isBold: Bool) -> CGFloat{
+    class func textHeightFromTextString(text: String, textWidth: CGFloat, fontSize: CGFloat, isBold: Bool) -> CGFloat{
             var dict: NSDictionary = NSDictionary()
             if (isBold) {
                 dict = NSDictionary(object: UIFont.boldSystemFontOfSize(fontSize), forKey: NSFontAttributeName)
@@ -55,7 +55,19 @@ class JYCuxtomTool: NSObject {
             let rect: CGRect = (text as NSString).boundingRectWithSize(CGSizeMake(textWidth, CGFloat(MAXFLOAT)), options: [NSStringDrawingOptions.TruncatesLastVisibleLine, NSStringDrawingOptions.UsesFontLeading, NSStringDrawingOptions.UsesLineFragmentOrigin], attributes: dict as? [String : AnyObject], context: nil)
             return rect.size.height
         }
-        
+    
+    
+    /**
+     @method 获取未指定宽度情况下，字符串value的宽度
+     @param value 待计算的字符串
+     @param fontSize 字体的大小
+     @result float 返回的高度
+     */
+    class func widthForString(value: String, fontSize: CGFloat) -> CGFloat {
+        let dict: NSDictionary = NSDictionary(object: UIFont.systemFontOfSize(fontSize), forKey: NSFontAttributeName)
+        let rect: CGRect = (value as NSString).boundingRectWithSize(CGSizeMake(CGFloat(MAXFLOAT), CGFloat(MAXFLOAT)), options: [NSStringDrawingOptions.TruncatesLastVisibleLine, NSStringDrawingOptions.UsesFontLeading, NSStringDrawingOptions.UsesLineFragmentOrigin], attributes: dict as? [String : AnyObject], context: nil)
+        return rect.size.width
+    }
 }
 
 

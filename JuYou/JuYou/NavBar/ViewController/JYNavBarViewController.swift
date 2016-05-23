@@ -51,6 +51,9 @@ class JYNavBarViewController: UITabBarController {
         self.selectedIndex = 2
     }
     
-    //MARK: - IBActions
-    
+    //MARK: - Public
+    func hidesBottomBar(hidden:Bool){
+        self.bottomView.hidden = hidden
+    }
+
 }

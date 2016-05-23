@@ -60,7 +60,10 @@ func UIColorWithHex(hex:UInt,alpha:CGFloat) -> UIColor {
 }
 
 let APPDelegate = (UIApplication.sharedApplication().delegate) as! AppDelegate
-let rootVC = APPDelegate.window?.rootViewController
+let RootVC = APPDelegate.window?.rootViewController
+let NavBarVC = RootVC as! JYNavBarViewController
+let NavBar = NavBarVC.bottomView
+
 
 //MARK 接口名称
 let kDestinationSearchHot="/destination/searchHot.do"

@@ -12,13 +12,12 @@ import MJRefresh
 let IsHotsCellW=Screen_weight
 let IsHotsCellH=(Screen_weight/690*360+62)
 
-class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSource{
+class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDataSource{
     //MARK: - property 属性
     var categorys:FilterFreedoms = FilterFreedoms.init()
     var isHots:FilterFreedoms = FilterFreedoms.init()
     
     var topView:JYHomeHeadView = JYHomeHeadView.init(frame: CGRectZero)
-    
     
     var tableView:UITableView = UITableView.init()
     let identifier = "IsHotCell";
@@ -34,6 +33,7 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        NavBarVC.hidesBottomBar(NO)
         self.loadWebData()
     }
     
@@ -119,6 +119,8 @@ class HomeViewController: UIViewController,UITableViewDelegate,UITableViewDataSo
     
     //选择一行
     func tableView(tableViews: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        let detail:HomeDetailViewController = HomeDetailViewController.init()
+        self.navigationController?.pushViewController(detail, animated: YES)
     }
 
 }
