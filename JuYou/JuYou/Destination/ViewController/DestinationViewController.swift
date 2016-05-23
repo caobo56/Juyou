@@ -45,7 +45,6 @@ class DestinationViewController: BasicViewController,UITableViewDelegate,UITable
         self.view.backgroundColor = UIColor.clearColor()
         self.view.addSubview(topView)
         topView.title.text = "目的地"
-
         self.tableView.setSize(CGSizeMake(Screen_weight, Screen_height-NavBarH-StateBarH))
         self.tableView.setOrigin(CGPointMake(0, NavBarH+StateBarH))
         self.tableView.delegate = self

@@ -23,4 +23,16 @@ extension UIButton{
         self.setTitle(title, forState:stateType)
     }
     
+    
+    func setHorizontalLeftImage(image: UIImage, withTitle title: String, forState stateType: UIControlState, andWithFont fontSize: CGFloat) {
+        self.imageView?.contentMode = UIViewContentMode.Center
+        self.imageEdgeInsets = UIEdgeInsetsMake(0.0, 0.0, 0.0, 0.0)
+        self.setImage(image, forState: stateType)
+        self.titleLabel!.contentMode = UIViewContentMode.Center
+        self.titleLabel!.backgroundColor = UIColor.clearColor()
+        self.titleLabel!.font = UIFont.systemFontOfSize(fontSize)
+        self.setTitleColor(UIColorWithHex(0x26323B, alpha:1.0), forState: stateType)
+        self.titleEdgeInsets = UIEdgeInsetsMake(0.0, 3.0, 0.0, 0.0)
+        self.setTitle(title, forState: stateType)
+    }
 }

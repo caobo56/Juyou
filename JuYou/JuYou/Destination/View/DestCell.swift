@@ -22,6 +22,7 @@ class DestCell: UITableViewCell {
     }
     
     func initUI(){
+        self.selectionStyle = UITableViewCellSelectionStyle.None
         self.setSize(CGSizeMake(DestCellW, DestCellH))
         self.imageV?.setSize(self.size)
         self.imageV?.center = self.center
