@@ -13,7 +13,7 @@ extension UIViewController{
     func showLoadingHUD() {
         let HUD:JGProgressHUD = JGProgressHUD.init(style: JGProgressHUDStyle.Dark)
         HUD.textLabel.text = nil
-        HUD.userInteractionEnabled = YES
+        HUD.userInteractionEnabled = yes
         HUD.position = JGProgressHUDPosition.Center
         HUD.showInView(self.view)
     }
@@ -21,7 +21,7 @@ extension UIViewController{
     func showLoadingHUDWithText(str:String) {
         let HUD:JGProgressHUD = JGProgressHUD.init(style: JGProgressHUDStyle.Dark)
         HUD.textLabel.text = str
-        HUD.userInteractionEnabled = YES
+        HUD.userInteractionEnabled = yes
         HUD.position = JGProgressHUDPosition.Center
         HUD.showInView(self.view)
     }
@@ -42,7 +42,7 @@ extension UIViewController{
     func showHUDWithText(str:String) {
         let HUD:JGProgressHUD = JGProgressHUD.init(style: JGProgressHUDStyle.Dark)
         HUD.textLabel.text = str
-        HUD.userInteractionEnabled = YES
+        HUD.userInteractionEnabled = yes
         HUD.position = JGProgressHUDPosition.Center
         HUD.marginInsets = UIEdgeInsetsMake(0, 0, Screen_height/2, 0)
         HUD.showInView(self.view)

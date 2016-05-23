@@ -9,13 +9,7 @@
 // The output below is limited by 1 KB.
 // Please Sign Up (Free!) to remove this limitation.
 
-//
-//  UIImage+Color.m
-//  jingduoduo
-//
-//  Created by 刁俊忠 on 15/6/24.
-//  Copyright (c) 2015年 totem. All rights reserved.
-//
+
 import UIKit
 
 extension UIImage {

@@ -38,7 +38,7 @@ let StateBarH:CGFloat=20
 let NavBarH:CGFloat=44
 let TabBarH:CGFloat=49
 
-let YES=true
+let yes=true
 let NO=false
 
 func AccuratePrice(num:NSNumber) -> String {

@@ -19,8 +19,8 @@ class BasicViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.navigationBarHidden = YES
-        NavBarVC.hidesBottomBar(YES)
+        self.navigationController?.navigationBarHidden = yes
+        NavBarVC.hidesBottomBar(yes)
         //        self.loadWebData()
     }
     

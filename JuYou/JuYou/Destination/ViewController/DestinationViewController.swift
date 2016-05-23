@@ -57,7 +57,7 @@ class DestinationViewController: BasicViewController,UITableViewDelegate,UITable
         self.tableView.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock: {
             self.loadDestinationSearchHot()
         })
-        self.tableView.mj_header.automaticallyChangeAlpha = YES
+        self.tableView.mj_header.automaticallyChangeAlpha = yes
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.view.addSubview(self.tableView)
         

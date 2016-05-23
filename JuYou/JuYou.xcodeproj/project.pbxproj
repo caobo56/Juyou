@@ -10,14 +10,7 @@
 		7E18E0F80119EA6BC0879440 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BE6D758F347E1E3CB70D87 /* Pods.framework */; };
 		A80754251CEA9F56004ABC0D /* JYConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754241CEA9F56004ABC0D /* JYConstant.swift */; };
 		A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754261CEAA709004ABC0D /* JYAPIClient.swift */; };
-		A80DA2631CEF06D100E7FE84 /* CoreAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */; };
-		A80DA2651CEF0EEF00E7FE84 /* UIView+screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */; };
-		A80DA2671CEF0FCB00E7FE84 /* JYCuxtomTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */; };
 		A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C3E1CEC008300F25778 /* MineViewController.swift */; };
-		A8105C461CEC3EFB00F25778 /* UIView+DDAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C451CEC3EFB00F25778 /* UIView+DDAddition.swift */; };
-		A8105C481CEC527D00F25778 /* UIButton+Typesetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C471CEC527D00F25778 /* UIButton+Typesetting.swift */; };
-		A8105C4A1CEC58D500F25778 /* UImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C491CEC58D500F25778 /* UImage+Size.swift */; };
-		A8105C4C1CEC599800F25778 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C4B1CEC599800F25778 /* SwiftyJSON.swift */; };
 		A8105C5B1CEC628100F25778 /* Reflect+ArcFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C501CEC628100F25778 /* Reflect+ArcFile.swift */; };
 		A8105C5C1CEC628100F25778 /* Reflect+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C521CEC628100F25778 /* Reflect+Parse.swift */; };
 		A8105C5D1CEC628100F25778 /* Reflect+Convert.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C541CEC628100F25778 /* Reflect+Convert.swift */; };
@@ -42,6 +35,15 @@
 		A87C1DFB1CE9A3A200E0285F /* JYNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C1DFA1CE9A3A200E0285F /* JYNetWorking.swift */; };
 		A8A45A091CF2969D00B33DFD /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A081CF2969D00B33DFD /* HomeDetailViewController.swift */; };
 		A8A45A0B1CF2987E00B33DFD /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A0A1CF2987E00B33DFD /* BasicViewController.swift */; };
+		A8A45A131CF2D7B500B33DFD /* UIButton+Typesetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A0D1CF2D7B500B33DFD /* UIButton+Typesetting.swift */; };
+		A8A45A141CF2D7B500B33DFD /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A0E1CF2D7B500B33DFD /* UIImage+Color.swift */; };
+		A8A45A151CF2D7B500B33DFD /* UImage+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A0F1CF2D7B500B33DFD /* UImage+Size.swift */; };
+		A8A45A161CF2D7B500B33DFD /* UIView+DDAddition.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A101CF2D7B500B33DFD /* UIView+DDAddition.swift */; };
+		A8A45A171CF2D7B500B33DFD /* UIView+screenshots.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A111CF2D7B500B33DFD /* UIView+screenshots.swift */; };
+		A8A45A181CF2D7B500B33DFD /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A121CF2D7B500B33DFD /* UIViewController+Loading.swift */; };
+		A8A45A1C1CF2D80F00B33DFD /* CoreAnimationEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A1A1CF2D80F00B33DFD /* CoreAnimationEffect.swift */; };
+		A8A45A1D1CF2D80F00B33DFD /* JYCuxtomTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A1B1CF2D80F00B33DFD /* JYCuxtomTool.swift */; };
+		A8A45A201CF2D85000B33DFD /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8A45A1F1CF2D85000B33DFD /* SwiftyJSON.swift */; };
 		A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA47161CED432F00FB8916 /* IsHotCell.swift */; };
 		A8BA47191CED928700FB8916 /* ISHotHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA47181CED928700FB8916 /* ISHotHeadView.swift */; };
 		A8BA47661CED9C8400FB8916 /* AuxiliaryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BA47631CED9C8400FB8916 /* AuxiliaryModels.swift */; };
@@ -52,10 +54,6 @@
 		A8BA47771CEDB64600FB8916 /* JGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA476F1CEDB64600FB8916 /* JGProgressHUD.framework */; };
 		A8BA47781CEDB64600FB8916 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA47701CEDB64600FB8916 /* MJRefresh.framework */; };
 		A8BA477B1CEDB64600FB8916 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA47731CEDB64600FB8916 /* SDWebImage.framework */; };
-		A8CFF01C1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */; };
-		A8CFF01D1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */; };
-		A8CFF01E1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */; };
-		A8E0D3291CEF041200BD77AC /* UIImage+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8E0D3281CEF041200BD77AC /* UIImage+Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,14 +77,7 @@
 		547493131F3A54D7BEB20001 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A80754241CEA9F56004ABC0D /* JYConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYConstant.swift; sourceTree = "<group>"; };
 		A80754261CEAA709004ABC0D /* JYAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYAPIClient.swift; sourceTree = "<group>"; };
-		A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAnimationEffect.swift; sourceTree = "<group>"; };
-		A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+screenshots.swift"; sourceTree = "<group>"; };
-		A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYCuxtomTool.swift; sourceTree = "<group>"; };
 		A8105C3E1CEC008300F25778 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
-		A8105C451CEC3EFB00F25778 /* UIView+DDAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DDAddition.swift"; sourceTree = "<group>"; };
-		A8105C471CEC527D00F25778 /* UIButton+Typesetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Typesetting.swift"; sourceTree = "<group>"; };
-		A8105C491CEC58D500F25778 /* UImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UImage+Size.swift"; sourceTree = "<group>"; };
-		A8105C4B1CEC599800F25778 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A8105C501CEC628100F25778 /* Reflect+ArcFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+ArcFile.swift"; sourceTree = "<group>"; };
 		A8105C521CEC628100F25778 /* Reflect+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Parse.swift"; sourceTree = "<group>"; };
 		A8105C541CEC628100F25778 /* Reflect+Convert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Convert.swift"; sourceTree = "<group>"; };
@@ -117,6 +108,15 @@
 		A87C1DFA1CE9A3A200E0285F /* JYNetWorking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYNetWorking.swift; sourceTree = "<group>"; };
 		A8A45A081CF2969D00B33DFD /* HomeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
 		A8A45A0A1CF2987E00B33DFD /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		A8A45A0D1CF2D7B500B33DFD /* UIButton+Typesetting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIButton+Typesetting.swift"; sourceTree = "<group>"; };
+		A8A45A0E1CF2D7B500B33DFD /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
+		A8A45A0F1CF2D7B500B33DFD /* UImage+Size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UImage+Size.swift"; sourceTree = "<group>"; };
+		A8A45A101CF2D7B500B33DFD /* UIView+DDAddition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+DDAddition.swift"; sourceTree = "<group>"; };
+		A8A45A111CF2D7B500B33DFD /* UIView+screenshots.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+screenshots.swift"; sourceTree = "<group>"; };
+		A8A45A121CF2D7B500B33DFD /* UIViewController+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
+		A8A45A1A1CF2D80F00B33DFD /* CoreAnimationEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreAnimationEffect.swift; sourceTree = "<group>"; };
+		A8A45A1B1CF2D80F00B33DFD /* JYCuxtomTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYCuxtomTool.swift; sourceTree = "<group>"; };
+		A8A45A1F1CF2D85000B33DFD /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 		A8BA47161CED432F00FB8916 /* IsHotCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsHotCell.swift; sourceTree = "<group>"; };
 		A8BA47181CED928700FB8916 /* ISHotHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISHotHeadView.swift; sourceTree = "<group>"; };
 		A8BA47631CED9C8400FB8916 /* AuxiliaryModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuxiliaryModels.swift; sourceTree = "<group>"; };
@@ -131,8 +131,6 @@
 		A8BA47711CEDB64600FB8916 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		A8BA47721CEDB64600FB8916 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
 		A8BA47731CEDB64600FB8916 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
-		A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Loading.swift"; sourceTree = "<group>"; };
-		A8E0D3281CEF041200BD77AC /* UIImage+Color.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Color.swift"; sourceTree = "<group>"; };
 		B2BE6D758F347E1E3CB70D87 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92A0CBB81C7838B662D31E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -195,15 +193,8 @@
 		A8105C441CEC3EC000F25778 /* Pubilc */ = {
 			isa = PBXGroup;
 			children = (
-				A8105C4B1CEC599800F25778 /* SwiftyJSON.swift */,
-				A8105C451CEC3EFB00F25778 /* UIView+DDAddition.swift */,
-				A8105C471CEC527D00F25778 /* UIButton+Typesetting.swift */,
-				A8105C491CEC58D500F25778 /* UImage+Size.swift */,
-				A8CFF01B1CEDBF2C00110E61 /* UIViewController+Loading.swift */,
-				A8E0D3281CEF041200BD77AC /* UIImage+Color.swift */,
-				A80DA2621CEF06D100E7FE84 /* CoreAnimationEffect.swift */,
-				A80DA2641CEF0EEF00E7FE84 /* UIView+screenshots.swift */,
-				A80DA2661CEF0FCB00E7FE84 /* JYCuxtomTool.swift */,
+				A8A45A191CF2D7E100B33DFD /* Tools */,
+				A8A45A0C1CF2D78700B33DFD /* Extension */,
 				A8A45A0A1CF2987E00B33DFD /* BasicViewController.swift */,
 			);
 			path = Pubilc;
@@ -212,6 +203,7 @@
 		A8105C4D1CEC626400F25778 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				A8A45A1E1CF2D85000B33DFD /* SwiftyJSON */,
 				A8BA47621CED9C8400FB8916 /* CyclePictureView */,
 				A8105C4E1CEC628100F25778 /* Reflect */,
 			);
@@ -438,6 +430,36 @@
 			path = NetWorking;
 			sourceTree = "<group>";
 		};
+		A8A45A0C1CF2D78700B33DFD /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A8A45A0D1CF2D7B500B33DFD /* UIButton+Typesetting.swift */,
+				A8A45A0E1CF2D7B500B33DFD /* UIImage+Color.swift */,
+				A8A45A0F1CF2D7B500B33DFD /* UImage+Size.swift */,
+				A8A45A101CF2D7B500B33DFD /* UIView+DDAddition.swift */,
+				A8A45A111CF2D7B500B33DFD /* UIView+screenshots.swift */,
+				A8A45A121CF2D7B500B33DFD /* UIViewController+Loading.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		A8A45A191CF2D7E100B33DFD /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				A8A45A1A1CF2D80F00B33DFD /* CoreAnimationEffect.swift */,
+				A8A45A1B1CF2D80F00B33DFD /* JYCuxtomTool.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		A8A45A1E1CF2D85000B33DFD /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				A8A45A1F1CF2D85000B33DFD /* SwiftyJSON.swift */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
 		A8BA47621CED9C8400FB8916 /* CyclePictureView */ = {
 			isa = PBXGroup;
 			children = (
@@ -646,35 +668,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80754251CEA9F56004ABC0D /* JYConstant.swift in Sources */,
-				A8105C4A1CEC58D500F25778 /* UImage+Size.swift in Sources */,
+				A8A45A171CF2D7B500B33DFD /* UIView+screenshots.swift in Sources */,
 				A8BA47191CED928700FB8916 /* ISHotHeadView.swift in Sources */,
+				A8A45A201CF2D85000B33DFD /* SwiftyJSON.swift in Sources */,
+				A8A45A161CF2D7B500B33DFD /* UIView+DDAddition.swift in Sources */,
 				A8105C681CEC62FF00F25778 /* JYNavBarViewController.swift in Sources */,
 				A8BA47661CED9C8400FB8916 /* AuxiliaryModels.swift in Sources */,
-				A8105C4C1CEC599800F25778 /* SwiftyJSON.swift in Sources */,
 				A8105C5C1CEC628100F25778 /* Reflect+Parse.swift in Sources */,
 				A8BA476A1CEDAEDA00FB8916 /* JYHomeHeadView.swift in Sources */,
 				A8105C6A1CEC630600F25778 /* JYHomeBottomView.swift in Sources */,
 				A8105C5E1CEC628100F25778 /* Reflect+Class.swift in Sources */,
 				A87C1DC61CE9A24D00E0285F /* AppDelegate.swift in Sources */,
 				A8105C611CEC628100F25778 /* Reflect+Type.swift in Sources */,
+				A8A45A181CF2D7B500B33DFD /* UIViewController+Loading.swift in Sources */,
 				A8A45A091CF2969D00B33DFD /* HomeDetailViewController.swift in Sources */,
 				A8105C7C1CEC7EF200F25778 /* DestCell.swift in Sources */,
 				A8105C621CEC628100F25778 /* Reflect.swift in Sources */,
-				A8105C461CEC3EFB00F25778 /* UIView+DDAddition.swift in Sources */,
 				A8BA47681CED9C8400FB8916 /* CyclePictureView.swift in Sources */,
 				A8105CBD1CECB60800F25778 /* HomeViewController.swift in Sources */,
-				A80DA2671CEF0FCB00E7FE84 /* JYCuxtomTool.swift in Sources */,
+				A8A45A1D1CF2D80F00B33DFD /* JYCuxtomTool.swift in Sources */,
 				A8105CB91CECB5DC00F25778 /* FilterFreedoms.swift in Sources */,
-				A8105C481CEC527D00F25778 /* UIButton+Typesetting.swift in Sources */,
-				A80DA2631CEF06D100E7FE84 /* CoreAnimationEffect.swift in Sources */,
-				A80DA2651CEF0EEF00E7FE84 /* UIView+screenshots.swift in Sources */,
 				A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */,
-				A8CFF01C1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */,
+				A8A45A131CF2D7B500B33DFD /* UIButton+Typesetting.swift in Sources */,
 				A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */,
 				A8BA47671CED9C8400FB8916 /* CyclePictureCell.swift in Sources */,
 				A8105C701CEC636E00F25778 /* DestinationHots.swift in Sources */,
 				A87C1DFB1CE9A3A200E0285F /* JYNetWorking.swift in Sources */,
-				A8E0D3291CEF041200BD77AC /* UIImage+Color.swift in Sources */,
+				A8A45A1C1CF2D80F00B33DFD /* CoreAnimationEffect.swift in Sources */,
 				A8105C721CEC63AD00F25778 /* DestinationViewController.swift in Sources */,
 				A8105C601CEC628100F25778 /* Reflect+Property.swift in Sources */,
 				A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */,
@@ -682,6 +702,8 @@
 				A8105C5D1CEC628100F25778 /* Reflect+Convert.swift in Sources */,
 				A8A45A0B1CF2987E00B33DFD /* BasicViewController.swift in Sources */,
 				A8105C5B1CEC628100F25778 /* Reflect+ArcFile.swift in Sources */,
+				A8A45A141CF2D7B500B33DFD /* UIImage+Color.swift in Sources */,
+				A8A45A151CF2D7B500B33DFD /* UImage+Size.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -690,7 +712,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87C1DDD1CE9A24D00E0285F /* JuYouTests.swift in Sources */,
-				A8CFF01D1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -699,7 +720,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				A87C1DE81CE9A24E00E0285F /* JuYouUITests.swift in Sources */,
-				A8CFF01E1CEDBF2C00110E61 /* UIViewController+Loading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -60,7 +60,7 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
         self.tableView.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock: {
             self.loadWebData()
         })
-        self.tableView.mj_header.automaticallyChangeAlpha = YES
+        self.tableView.mj_header.automaticallyChangeAlpha = yes
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.view.addSubview(self.tableView)
         self.tableView.tableHeaderView = self.headView
@@ -127,7 +127,7 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
     //选择一行
     func tableView(tableViews: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
         let detail:HomeDetailViewController = HomeDetailViewController.init()
-        self.navigationController?.pushViewController(detail, animated: YES)
+        self.navigationController?.pushViewController(detail, animated: yes)
     }
 
 }
