@@ -21,10 +21,10 @@ func SERVER_URL(interfaceName:String) -> String {
     var SERVER_URL = ""
     if (kHOST_ProDuct == 1){// 1 生产  0 测试
         //正式服务器
-         SERVER_URL="http://juyoufenqi.com/juyou"+interfaceName
+         SERVER_URL="http://juyoufenqi.com/juyou/"+interfaceName
     }else{
         //测试服务器
-         SERVER_URL="http://juyoufenqi.com/juyou"+interfaceName
+         SERVER_URL="http://juyoufenqi.com/juyou/"+interfaceName
     }
     
     return SERVER_URL
@@ -66,8 +66,9 @@ let NavBar = NavBarVC.bottomView
 
 
 //MARK 接口名称
-let kDestinationSearchHot="/destination/searchHot.do"
-let kFilterFreedom="/freedom/filterFreedom.do"
+let kDestinationSearchHot="destination/searchHot.do"
+let kFilterFreedom="freedom/filterFreedom.do"
+let kSearchFreedomById="freedom/searchFreedomById.do"
 
 
 

@@ -26,4 +26,31 @@ func getFilterFreedom(params:NSDictionary,sucess:SucessBlock,failure:FailureBloc
     )
 }
 
+//行程详情
+func searchFreedomById(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
+    JYNetWorking.sharedNetWorking.getRequest(kSearchFreedomById,
+                                             params: params,
+                                             sucess: sucess,
+                                             failure:failure
+    )
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

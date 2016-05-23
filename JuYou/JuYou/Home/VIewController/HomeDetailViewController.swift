@@ -9,13 +9,21 @@
 import UIKit
 
 class HomeDetailViewController: BasicViewController {
-    //MARK: - View Lifecycle （View 的生命周期）
+    //MARK: - property 属性
+    var freedomDetail:FreedomDetail = FreedomDetail.init()
+
     
+    //MARK: - View Lifecycle （View 的生命周期）
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.whiteColor()
-//        self.initUI()
+        self.initUI()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadWebData()
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -26,6 +34,26 @@ class HomeDetailViewController: BasicViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: - Custom Accessors （自定义访问器）
+    func initUI(){
+    
+    }
+    //加载数据
+    func loadWebData(){
+        weak var weakSelf = self
+        let parmas:NSDictionary = ["id":"210010"]
+        searchFreedomById(parmas,sucess:{ (datas) in
+            if (!datas.isEqual(NSNull()) ) {
+                guard let dicts:NSDictionary = (datas as! NSDictionary) else {return}
+                weakSelf!.freedomDetail = FreedomDetail.parse(dict:dicts)
+                print(weakSelf?.freedomDetail.pic!)
+            }
+            },failure: { (errorMsg) in
+                
+        })
+
     }
 
 }
