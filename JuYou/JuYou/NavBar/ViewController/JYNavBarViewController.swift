@@ -30,7 +30,7 @@ class JYNavBarViewController: UITabBarController {
     
     
     //MARK: - Custom Accessors （自定义访问器）
-    func setTabBarUI() {
+    @objc private func setTabBarUI() {
         self.tabBar.hidden = true
         self.view.addSubview(bottomView)
         self.bottomView.setBottom(0)

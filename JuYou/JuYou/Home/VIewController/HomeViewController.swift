@@ -57,6 +57,9 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
         self.tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
             self.loadWebData()
         })
+        self.tableView.mj_footer = MJRefreshBackNormalFooter.init(refreshingBlock: {
+            self.loadWebData()
+        })
         self.tableView.mj_header.automaticallyChangeAlpha = YES
         self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         self.view.addSubview(self.tableView)
@@ -74,6 +77,7 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
         let parmasCategory:NSDictionary = ["freedom.category":"1","freedom.orderBy":"0","pager.pageNum":"0","pager.pageSize":"2"]
         getFilterFreedom(parmasCategory,sucess:{ (datas) in
             weakSelf!.tableView.mj_header.endRefreshing()
+            weakSelf!.tableView.mj_footer.endRefreshing()
             if (!datas.isEqual(NSNull()) ) {
                 guard let arrs:NSArray = (datas as! NSArray) else {return}
                 weakSelf!.categorys.filterFreedoms = Filterfreedom.parses(arr: arrs) as? [Filterfreedom]
@@ -82,10 +86,12 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
             }
             },failure: { (errorMsg) in
                 weakSelf!.tableView.mj_header.endRefreshing()
+                weakSelf!.tableView.mj_footer.endRefreshing()
         })
         let parmasIsHot:NSDictionary = ["freedom.isHot":"1","freedom.orderBy":"0","pager.pageNum":"0","pager.pageSize":"5"]
         getFilterFreedom(parmasIsHot,sucess:{ (datas) in
             weakSelf!.tableView.mj_header.endRefreshing()
+            weakSelf!.tableView.mj_footer.endRefreshing()
             if (!datas.isEqual(NSNull()) ) {
                 guard let arrs:NSArray = (datas as! NSArray) else {return}
                 weakSelf!.isHots.filterFreedoms = Filterfreedom.parses(arr: arrs) as? [Filterfreedom]
@@ -93,6 +99,7 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
             }
             },failure: { (errorMsg) in
             weakSelf!.tableView.mj_header.endRefreshing()
+            weakSelf!.tableView.mj_footer.endRefreshing()
         })
     }
     
