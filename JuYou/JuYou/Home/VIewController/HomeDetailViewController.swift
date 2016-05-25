@@ -52,7 +52,7 @@ class HomeDetailViewController: BasicViewController {
     func loadWebData(){
         weak var weakSelf = self
         let parmas:NSDictionary = ["id":freedomDetailID]
-        searchFreedomById(parmas,sucess:{ (datas) in
+        JYAPIClient.searchFreedomById(parmas,sucess:{ (datas) in
             if (!datas.isEqual(NSNull()) ) {
                 guard let dicts:NSDictionary = (datas as! NSDictionary) else {return}
                 weakSelf!.freedomDetail = FreedomDetail.parse(dict:dicts)

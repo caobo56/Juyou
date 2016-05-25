@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="194" id="KGk-i7-Jjw" customClass="LJHeadImageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="194"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="personal_bg2" translatesAutoresizingMaskIntoConstraints="NO" id="fi6-v5-QRf">
+                        <rect key="frame" x="0.0" y="-20" width="320" height="214"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="touxiang" translatesAutoresizingMaskIntoConstraints="NO" id="e4y-sn-Ahd">
+                        <rect key="frame" x="125" y="59" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="vAE-8S-IDJ"/>
+                            <constraint firstAttribute="height" constant="70" id="zGL-XV-IUE"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ddz_bgCornerRadius">
+                                <real key="value" value="35"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ddz_borderWidth">
+                                <real key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbR-zj-XP6">
+                        <rect key="frame" x="85" y="148" width="150" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="t1M-WP-tc8"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PbR-zj-XP6" secondAttribute="trailing" constant="85" id="6QG-jS-SPe"/>
+                    <constraint firstAttribute="centerX" secondItem="e4y-sn-Ahd" secondAttribute="centerX" id="As1-Rw-Q9V"/>
+                    <constraint firstItem="e4y-sn-Ahd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="59" id="PaL-Gn-V5U"/>
+                    <constraint firstItem="fi6-v5-QRf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-20" id="VHp-qk-Cwc"/>
+                    <constraint firstItem="PbR-zj-XP6" firstAttribute="top" secondItem="e4y-sn-Ahd" secondAttribute="bottom" constant="19" id="f7q-fG-BsQ"/>
+                    <constraint firstItem="fi6-v5-QRf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hoY-y5-5sR"/>
+                    <constraint firstAttribute="trailing" secondItem="fi6-v5-QRf" secondAttribute="trailing" id="stz-3a-Xqf"/>
+                    <constraint firstAttribute="bottom" secondItem="fi6-v5-QRf" secondAttribute="bottom" id="t7S-8H-UXh"/>
+                    <constraint firstItem="PbR-zj-XP6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="85" id="zeh-OI-pAV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.3237545926" green="0.61421776149999996" blue="0.86426720560000003" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="headImageView" destination="e4y-sn-Ahd" id="ub9-Dr-9Jf"/>
+                <outlet property="nickLabel" destination="PbR-zj-XP6" id="lim-Xf-Pgf"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="216"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="personal_bg2" width="375" height="213"/>
+        <image name="touxiang" width="70" height="70"/>
+    </resources>
+</document>

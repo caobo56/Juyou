@@ -2,6 +2,7 @@ PODS:
   - Alamofire (3.4.0)
   - FDFullscreenPopGesture (1.1)
   - JGProgressHUD (1.3.2)
+  - MJExtension (3.0.10)
   - MJRefresh (3.1.0)
   - SDWebImage (3.7.6):
     - SDWebImage/Core (= 3.7.6)
@@ -11,6 +12,7 @@ DEPENDENCIES:
   - Alamofire
   - FDFullscreenPopGesture
   - JGProgressHUD
+  - MJExtension
   - MJRefresh
   - SDWebImage
 
@@ -18,6 +20,7 @@ SPEC CHECKSUMS:
   Alamofire: c19a627cefd6a95f840401c49ab1f124e07f54ee
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   JGProgressHUD: ccac0ead9b771eac0ebcc2b0800efd7f1e1784dc
+  MJExtension: d86aacb740c87519d20e3cca55b6fa4be6cc7548
   MJRefresh: 743e6404967d1c2c688472ea3ecfde247d872db4
   SDWebImage: c325cf02c30337336b95beff20a13df489ec0ec9
 

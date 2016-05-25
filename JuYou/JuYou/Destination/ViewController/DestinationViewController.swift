@@ -69,7 +69,7 @@ class DestinationViewController: BasicViewController,UITableViewDelegate,UITable
     func loadDestinationSearchHot(){
         weak var weakSelf = self
         let parms:NSDictionary = ["key":"value"]
-        getDestinationSearchHot(parms,
+        JYAPIClient.getDestinationSearchHot(parms,
                                 sucess: { (datas) in
                                     weakSelf!.tableView.mj_header.endRefreshing()
                                     weakSelf!.tableView.mj_footer.endRefreshing()

@@ -8,6 +8,7 @@ use_frameworks!
 link_with 'JuYou', 'JuYou Tests'
 
 pod 'MJRefresh'
+pod 'MJExtension'
 pod 'JGProgressHUD'
 pod 'SDWebImage'
 #网络请求库

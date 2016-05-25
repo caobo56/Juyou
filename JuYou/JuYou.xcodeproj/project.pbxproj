@@ -10,6 +10,7 @@
 		7E18E0F80119EA6BC0879440 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BE6D758F347E1E3CB70D87 /* Pods.framework */; };
 		A80754251CEA9F56004ABC0D /* JYConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754241CEA9F56004ABC0D /* JYConstant.swift */; };
 		A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754261CEAA709004ABC0D /* JYAPIClient.swift */; };
+		A8087F1F1CF56E24005DB30A /* TPPushDemandTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8087F1E1CF56E24005DB30A /* TPPushDemandTopView.m */; };
 		A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C3E1CEC008300F25778 /* MineViewController.swift */; };
 		A8105C5B1CEC628100F25778 /* Reflect+ArcFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C501CEC628100F25778 /* Reflect+ArcFile.swift */; };
 		A8105C5C1CEC628100F25778 /* Reflect+Parse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C521CEC628100F25778 /* Reflect+Parse.swift */; };
@@ -55,6 +56,34 @@
 		A8BA47771CEDB64600FB8916 /* JGProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA476F1CEDB64600FB8916 /* JGProgressHUD.framework */; };
 		A8BA47781CEDB64600FB8916 /* MJRefresh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA47701CEDB64600FB8916 /* MJRefresh.framework */; };
 		A8BA477B1CEDB64600FB8916 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8BA47731CEDB64600FB8916 /* SDWebImage.framework */; };
+		A8E834371CF2EE6200BA5166 /* LvInputView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E834351CF2EE6200BA5166 /* LvInputView.m */; };
+		A8E834381CF2EE6200BA5166 /* LvInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8E834361CF2EE6200BA5166 /* LvInputView.xib */; };
+		A8E8343B1CF2EECF00BA5166 /* MTColor.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E8343A1CF2EECF00BA5166 /* MTColor.m */; };
+		A8E8343E1CF2EEF600BA5166 /* UIColor+LJ.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E8343D1CF2EEF600BA5166 /* UIColor+LJ.m */; };
+		A8E834411CF2EF4800BA5166 /* NSString+NSPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8E834401CF2EF4800BA5166 /* NSString+NSPredicate.m */; };
+		A8FE6B561CF2E97300EF32B3 /* changPersonInfn.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B251CF2E97300EF32B3 /* changPersonInfn.storyboard */; };
+		A8FE6B571CF2E97300EF32B3 /* LJChangePassWordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B271CF2E97300EF32B3 /* LJChangePassWordViewController.m */; };
+		A8FE6B581CF2E97300EF32B3 /* LJChangePassWordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B281CF2E97300EF32B3 /* LJChangePassWordViewController.xib */; };
+		A8FE6B591CF2E97300EF32B3 /* LJChangePersonInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B2A1CF2E97300EF32B3 /* LJChangePersonInfoController.m */; };
+		A8FE6B5A1CF2E97300EF32B3 /* LJFindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B2C1CF2E97300EF32B3 /* LJFindPasswordViewController.m */; };
+		A8FE6B5B1CF2E97300EF32B3 /* LJFindPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B2D1CF2E97300EF32B3 /* LJFindPasswordViewController.xib */; };
+		A8FE6B5C1CF2E97300EF32B3 /* LJLooginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B2F1CF2E97300EF32B3 /* LJLooginViewController.m */; };
+		A8FE6B5D1CF2E97300EF32B3 /* LJLooginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B301CF2E97300EF32B3 /* LJLooginViewController.xib */; };
+		A8FE6B5E1CF2E97300EF32B3 /* LJPersonalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B321CF2E97300EF32B3 /* LJPersonalTableViewController.m */; };
+		A8FE6B5F1CF2E97300EF32B3 /* LJRegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B341CF2E97300EF32B3 /* LJRegisterViewController.m */; };
+		A8FE6B601CF2E97300EF32B3 /* LJRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B351CF2E97300EF32B3 /* LJRegisterViewController.xib */; };
+		A8FE6B611CF2E97300EF32B3 /* MTChangePassWordController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B371CF2E97300EF32B3 /* MTChangePassWordController.m */; };
+		A8FE6B621CF2E97300EF32B3 /* MTChangePassWordController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B381CF2E97300EF32B3 /* MTChangePassWordController.xib */; };
+		A8FE6B671CF2E97300EF32B3 /* MTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B431CF2E97300EF32B3 /* MTUser.m */; };
+		A8FE6B681CF2E97300EF32B3 /* YYAccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B451CF2E97300EF32B3 /* YYAccountTool.m */; };
+		A8FE6B691CF2E97300EF32B3 /* TPLoginMaster.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B481CF2E97300EF32B3 /* TPLoginMaster.m */; };
+		A8FE6B6A1CF2E97300EF32B3 /* LJHeadImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B4B1CF2E97300EF32B3 /* LJHeadImageCell.m */; };
+		A8FE6B6B1CF2E97300EF32B3 /* LJHeadImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B4C1CF2E97300EF32B3 /* LJHeadImageCell.xib */; };
+		A8FE6B6C1CF2E97300EF32B3 /* LvUIPickerViewOne.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B4E1CF2E97300EF32B3 /* LvUIPickerViewOne.m */; };
+		A8FE6B6D1CF2E97300EF32B3 /* LvUIPickerViewOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = A8FE6B4F1CF2E97300EF32B3 /* LvUIPickerViewOne.xib */; };
+		A8FE6B731CF2E9A800EF32B3 /* TPBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B721CF2E9A800EF32B3 /* TPBasicViewController.m */; };
+		A8FE6B761CF2EA0A00EF32B3 /* TPWeekRecommendTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B751CF2EA0A00EF32B3 /* TPWeekRecommendTopView.m */; };
+		A8FE6B7C1CF2EC4300EF32B3 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = A8FE6B7B1CF2EC4300EF32B3 /* NSString+MD5.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +107,8 @@
 		547493131F3A54D7BEB20001 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A80754241CEA9F56004ABC0D /* JYConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYConstant.swift; sourceTree = "<group>"; };
 		A80754261CEAA709004ABC0D /* JYAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYAPIClient.swift; sourceTree = "<group>"; };
+		A8087F1D1CF56E24005DB30A /* TPPushDemandTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPushDemandTopView.h; sourceTree = "<group>"; };
+		A8087F1E1CF56E24005DB30A /* TPPushDemandTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPushDemandTopView.m; sourceTree = "<group>"; };
 		A8105C3E1CEC008300F25778 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		A8105C501CEC628100F25778 /* Reflect+ArcFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+ArcFile.swift"; sourceTree = "<group>"; };
 		A8105C521CEC628100F25778 /* Reflect+Parse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Reflect+Parse.swift"; sourceTree = "<group>"; };
@@ -94,6 +125,8 @@
 		A8105C7B1CEC7EF200F25778 /* DestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestCell.swift; sourceTree = "<group>"; };
 		A8105CB81CECB5DC00F25778 /* FilterFreedoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterFreedoms.swift; sourceTree = "<group>"; };
 		A8105CBC1CECB60800F25778 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A83C14F01CF2F58F00C493F3 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
+		A83C14F11CF2FA1500C493F3 /* OCconstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCconstant.h; sourceTree = "<group>"; };
 		A87C1DC21CE9A24D00E0285F /* JuYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A87C1DC51CE9A24D00E0285F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A87C1DCC1CE9A24D00E0285F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -133,6 +166,53 @@
 		A8BA47711CEDB64600FB8916 /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/ReactiveCocoa.framework"; sourceTree = "<group>"; };
 		A8BA47721CEDB64600FB8916 /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/Result.framework"; sourceTree = "<group>"; };
 		A8BA47731CEDB64600FB8916 /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = "../../Library/Developer/Xcode/DerivedData/JuYou-hicrdoiildyfyeezhfzidwpvotno/Build/Products/Debug-iphoneos/SDWebImage.framework"; sourceTree = "<group>"; };
+		A8E834341CF2EE6200BA5166 /* LvInputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvInputView.h; sourceTree = "<group>"; };
+		A8E834351CF2EE6200BA5166 /* LvInputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvInputView.m; sourceTree = "<group>"; };
+		A8E834361CF2EE6200BA5166 /* LvInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LvInputView.xib; sourceTree = "<group>"; };
+		A8E834391CF2EECF00BA5166 /* MTColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTColor.h; sourceTree = "<group>"; };
+		A8E8343A1CF2EECF00BA5166 /* MTColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTColor.m; sourceTree = "<group>"; };
+		A8E8343C1CF2EEF600BA5166 /* UIColor+LJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LJ.h"; sourceTree = "<group>"; };
+		A8E8343D1CF2EEF600BA5166 /* UIColor+LJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LJ.m"; sourceTree = "<group>"; };
+		A8E8343F1CF2EF4800BA5166 /* NSString+NSPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NSPredicate.h"; sourceTree = "<group>"; };
+		A8E834401CF2EF4800BA5166 /* NSString+NSPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSPredicate.m"; sourceTree = "<group>"; };
+		A8FE6B251CF2E97300EF32B3 /* changPersonInfn.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = changPersonInfn.storyboard; sourceTree = "<group>"; };
+		A8FE6B261CF2E97300EF32B3 /* LJChangePassWordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChangePassWordViewController.h; sourceTree = "<group>"; };
+		A8FE6B271CF2E97300EF32B3 /* LJChangePassWordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJChangePassWordViewController.m; sourceTree = "<group>"; };
+		A8FE6B281CF2E97300EF32B3 /* LJChangePassWordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJChangePassWordViewController.xib; sourceTree = "<group>"; };
+		A8FE6B291CF2E97300EF32B3 /* LJChangePersonInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJChangePersonInfoController.h; sourceTree = "<group>"; };
+		A8FE6B2A1CF2E97300EF32B3 /* LJChangePersonInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJChangePersonInfoController.m; sourceTree = "<group>"; };
+		A8FE6B2B1CF2E97300EF32B3 /* LJFindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJFindPasswordViewController.h; sourceTree = "<group>"; };
+		A8FE6B2C1CF2E97300EF32B3 /* LJFindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJFindPasswordViewController.m; sourceTree = "<group>"; };
+		A8FE6B2D1CF2E97300EF32B3 /* LJFindPasswordViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJFindPasswordViewController.xib; sourceTree = "<group>"; };
+		A8FE6B2E1CF2E97300EF32B3 /* LJLooginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJLooginViewController.h; sourceTree = "<group>"; };
+		A8FE6B2F1CF2E97300EF32B3 /* LJLooginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJLooginViewController.m; sourceTree = "<group>"; };
+		A8FE6B301CF2E97300EF32B3 /* LJLooginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJLooginViewController.xib; sourceTree = "<group>"; };
+		A8FE6B311CF2E97300EF32B3 /* LJPersonalTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJPersonalTableViewController.h; sourceTree = "<group>"; };
+		A8FE6B321CF2E97300EF32B3 /* LJPersonalTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJPersonalTableViewController.m; sourceTree = "<group>"; };
+		A8FE6B331CF2E97300EF32B3 /* LJRegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJRegisterViewController.h; sourceTree = "<group>"; };
+		A8FE6B341CF2E97300EF32B3 /* LJRegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJRegisterViewController.m; sourceTree = "<group>"; };
+		A8FE6B351CF2E97300EF32B3 /* LJRegisterViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJRegisterViewController.xib; sourceTree = "<group>"; };
+		A8FE6B361CF2E97300EF32B3 /* MTChangePassWordController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTChangePassWordController.h; sourceTree = "<group>"; };
+		A8FE6B371CF2E97300EF32B3 /* MTChangePassWordController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTChangePassWordController.m; sourceTree = "<group>"; };
+		A8FE6B381CF2E97300EF32B3 /* MTChangePassWordController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MTChangePassWordController.xib; sourceTree = "<group>"; };
+		A8FE6B421CF2E97300EF32B3 /* MTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTUser.h; sourceTree = "<group>"; };
+		A8FE6B431CF2E97300EF32B3 /* MTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTUser.m; sourceTree = "<group>"; };
+		A8FE6B441CF2E97300EF32B3 /* YYAccountTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYAccountTool.h; sourceTree = "<group>"; };
+		A8FE6B451CF2E97300EF32B3 /* YYAccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYAccountTool.m; sourceTree = "<group>"; };
+		A8FE6B471CF2E97300EF32B3 /* TPLoginMaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPLoginMaster.h; sourceTree = "<group>"; };
+		A8FE6B481CF2E97300EF32B3 /* TPLoginMaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPLoginMaster.m; sourceTree = "<group>"; };
+		A8FE6B4A1CF2E97300EF32B3 /* LJHeadImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LJHeadImageCell.h; sourceTree = "<group>"; };
+		A8FE6B4B1CF2E97300EF32B3 /* LJHeadImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LJHeadImageCell.m; sourceTree = "<group>"; };
+		A8FE6B4C1CF2E97300EF32B3 /* LJHeadImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LJHeadImageCell.xib; sourceTree = "<group>"; };
+		A8FE6B4D1CF2E97300EF32B3 /* LvUIPickerViewOne.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LvUIPickerViewOne.h; sourceTree = "<group>"; };
+		A8FE6B4E1CF2E97300EF32B3 /* LvUIPickerViewOne.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LvUIPickerViewOne.m; sourceTree = "<group>"; };
+		A8FE6B4F1CF2E97300EF32B3 /* LvUIPickerViewOne.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LvUIPickerViewOne.xib; sourceTree = "<group>"; };
+		A8FE6B711CF2E9A800EF32B3 /* TPBasicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPBasicViewController.h; sourceTree = "<group>"; };
+		A8FE6B721CF2E9A800EF32B3 /* TPBasicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPBasicViewController.m; sourceTree = "<group>"; };
+		A8FE6B741CF2EA0A00EF32B3 /* TPWeekRecommendTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPWeekRecommendTopView.h; sourceTree = "<group>"; };
+		A8FE6B751CF2EA0A00EF32B3 /* TPWeekRecommendTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPWeekRecommendTopView.m; sourceTree = "<group>"; };
+		A8FE6B7A1CF2EC4300EF32B3 /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		A8FE6B7B1CF2EC4300EF32B3 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		B2BE6D758F347E1E3CB70D87 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F92A0CBB81C7838B662D31E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -281,6 +361,7 @@
 			isa = PBXGroup;
 			children = (
 				A8105C671CEC62FF00F25778 /* JYNavBarViewController.swift */,
+				A83C14F01CF2F58F00C493F3 /* Bridge-Header.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -384,8 +465,8 @@
 				A8105C4D1CEC626400F25778 /* ThirdParty */,
 				A8105C441CEC3EC000F25778 /* Pubilc */,
 				A87C1DF91CE9A3A200E0285F /* NetWorking */,
-				A87C1DF61CE9A39300E0285F /* JYModel */,
 				A87C1DC51CE9A24D00E0285F /* AppDelegate.swift */,
+				A8FE6B231CF2E97300EF32B3 /* LoginandRegist */,
 				A8105C631CEC62CE00F25778 /* NavBar */,
 				A8105C6B1CEC633A00F25778 /* Destination */,
 				A8105CB61CECB5CB00F25778 /* Home */,
@@ -414,13 +495,6 @@
 				A87C1DE91CE9A24E00E0285F /* Info.plist */,
 			);
 			path = JuYouUITests;
-			sourceTree = "<group>";
-		};
-		A87C1DF61CE9A39300E0285F /* JYModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = JYModel;
 			sourceTree = "<group>";
 		};
 		A87C1DF91CE9A3A200E0285F /* NetWorking */ = {
@@ -471,6 +545,95 @@
 				A8BA47651CED9C8400FB8916 /* CyclePictureView.swift */,
 			);
 			path = CyclePictureView;
+			sourceTree = "<group>";
+		};
+		A8FE6B231CF2E97300EF32B3 /* LoginandRegist */ = {
+			isa = PBXGroup;
+			children = (
+				A8FE6B241CF2E97300EF32B3 /* Controller */,
+				A8FE6B411CF2E97300EF32B3 /* Model */,
+				A8FE6B461CF2E97300EF32B3 /* Other */,
+				A8FE6B491CF2E97300EF32B3 /* View */,
+			);
+			path = LoginandRegist;
+			sourceTree = "<group>";
+		};
+		A8FE6B241CF2E97300EF32B3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8FE6B711CF2E9A800EF32B3 /* TPBasicViewController.h */,
+				A8FE6B721CF2E9A800EF32B3 /* TPBasicViewController.m */,
+				A8FE6B251CF2E97300EF32B3 /* changPersonInfn.storyboard */,
+				A8FE6B261CF2E97300EF32B3 /* LJChangePassWordViewController.h */,
+				A8FE6B271CF2E97300EF32B3 /* LJChangePassWordViewController.m */,
+				A8FE6B281CF2E97300EF32B3 /* LJChangePassWordViewController.xib */,
+				A8FE6B291CF2E97300EF32B3 /* LJChangePersonInfoController.h */,
+				A8FE6B2A1CF2E97300EF32B3 /* LJChangePersonInfoController.m */,
+				A8FE6B2B1CF2E97300EF32B3 /* LJFindPasswordViewController.h */,
+				A8FE6B2C1CF2E97300EF32B3 /* LJFindPasswordViewController.m */,
+				A8FE6B2D1CF2E97300EF32B3 /* LJFindPasswordViewController.xib */,
+				A8FE6B2E1CF2E97300EF32B3 /* LJLooginViewController.h */,
+				A8FE6B2F1CF2E97300EF32B3 /* LJLooginViewController.m */,
+				A8FE6B301CF2E97300EF32B3 /* LJLooginViewController.xib */,
+				A8FE6B311CF2E97300EF32B3 /* LJPersonalTableViewController.h */,
+				A8FE6B321CF2E97300EF32B3 /* LJPersonalTableViewController.m */,
+				A8FE6B331CF2E97300EF32B3 /* LJRegisterViewController.h */,
+				A8FE6B341CF2E97300EF32B3 /* LJRegisterViewController.m */,
+				A8FE6B351CF2E97300EF32B3 /* LJRegisterViewController.xib */,
+				A8FE6B361CF2E97300EF32B3 /* MTChangePassWordController.h */,
+				A8FE6B371CF2E97300EF32B3 /* MTChangePassWordController.m */,
+				A8FE6B381CF2E97300EF32B3 /* MTChangePassWordController.xib */,
+				A83C14F11CF2FA1500C493F3 /* OCconstant.h */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8FE6B411CF2E97300EF32B3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A8FE6B421CF2E97300EF32B3 /* MTUser.h */,
+				A8FE6B431CF2E97300EF32B3 /* MTUser.m */,
+				A8FE6B441CF2E97300EF32B3 /* YYAccountTool.h */,
+				A8FE6B451CF2E97300EF32B3 /* YYAccountTool.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A8FE6B461CF2E97300EF32B3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				A8FE6B471CF2E97300EF32B3 /* TPLoginMaster.h */,
+				A8FE6B481CF2E97300EF32B3 /* TPLoginMaster.m */,
+				A8FE6B7A1CF2EC4300EF32B3 /* NSString+MD5.h */,
+				A8FE6B7B1CF2EC4300EF32B3 /* NSString+MD5.m */,
+				A8E834391CF2EECF00BA5166 /* MTColor.h */,
+				A8E8343A1CF2EECF00BA5166 /* MTColor.m */,
+				A8E8343C1CF2EEF600BA5166 /* UIColor+LJ.h */,
+				A8E8343D1CF2EEF600BA5166 /* UIColor+LJ.m */,
+				A8E8343F1CF2EF4800BA5166 /* NSString+NSPredicate.h */,
+				A8E834401CF2EF4800BA5166 /* NSString+NSPredicate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		A8FE6B491CF2E97300EF32B3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A8087F1D1CF56E24005DB30A /* TPPushDemandTopView.h */,
+				A8087F1E1CF56E24005DB30A /* TPPushDemandTopView.m */,
+				A8E834341CF2EE6200BA5166 /* LvInputView.h */,
+				A8E834351CF2EE6200BA5166 /* LvInputView.m */,
+				A8E834361CF2EE6200BA5166 /* LvInputView.xib */,
+				A8FE6B741CF2EA0A00EF32B3 /* TPWeekRecommendTopView.h */,
+				A8FE6B751CF2EA0A00EF32B3 /* TPWeekRecommendTopView.m */,
+				A8FE6B4A1CF2E97300EF32B3 /* LJHeadImageCell.h */,
+				A8FE6B4B1CF2E97300EF32B3 /* LJHeadImageCell.m */,
+				A8FE6B4C1CF2E97300EF32B3 /* LJHeadImageCell.xib */,
+				A8FE6B4D1CF2E97300EF32B3 /* LvUIPickerViewOne.h */,
+				A8FE6B4E1CF2E97300EF32B3 /* LvUIPickerViewOne.m */,
+				A8FE6B4F1CF2E97300EF32B3 /* LvUIPickerViewOne.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -581,9 +744,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8FE6B5B1CF2E97300EF32B3 /* LJFindPasswordViewController.xib in Resources */,
+				A8E834381CF2EE6200BA5166 /* LvInputView.xib in Resources */,
+				A8FE6B581CF2E97300EF32B3 /* LJChangePassWordViewController.xib in Resources */,
+				A8FE6B5D1CF2E97300EF32B3 /* LJLooginViewController.xib in Resources */,
+				A8FE6B561CF2E97300EF32B3 /* changPersonInfn.storyboard in Resources */,
 				A87C1DD21CE9A24D00E0285F /* LaunchScreen.storyboard in Resources */,
+				A8FE6B6B1CF2E97300EF32B3 /* LJHeadImageCell.xib in Resources */,
 				A87C1DCF1CE9A24D00E0285F /* Assets.xcassets in Resources */,
+				A8FE6B6D1CF2E97300EF32B3 /* LvUIPickerViewOne.xib in Resources */,
 				A87C1DCD1CE9A24D00E0285F /* Main.storyboard in Resources */,
+				A8FE6B621CF2E97300EF32B3 /* MTChangePassWordController.xib in Resources */,
+				A8FE6B601CF2E97300EF32B3 /* LJRegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -671,36 +843,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80754251CEA9F56004ABC0D /* JYConstant.swift in Sources */,
+				A8E834371CF2EE6200BA5166 /* LvInputView.m in Sources */,
 				A8A45A171CF2D7B500B33DFD /* UIView+screenshots.swift in Sources */,
 				A8BA47191CED928700FB8916 /* ISHotHeadView.swift in Sources */,
 				A8A45A201CF2D85000B33DFD /* SwiftyJSON.swift in Sources */,
+				A8E8343E1CF2EEF600BA5166 /* UIColor+LJ.m in Sources */,
 				A8A45A161CF2D7B500B33DFD /* UIView+DDAddition.swift in Sources */,
 				A8105C681CEC62FF00F25778 /* JYNavBarViewController.swift in Sources */,
+				A8FE6B6C1CF2E97300EF32B3 /* LvUIPickerViewOne.m in Sources */,
+				A8FE6B691CF2E97300EF32B3 /* TPLoginMaster.m in Sources */,
+				A8FE6B5E1CF2E97300EF32B3 /* LJPersonalTableViewController.m in Sources */,
 				A8BA47661CED9C8400FB8916 /* AuxiliaryModels.swift in Sources */,
 				A8105C5C1CEC628100F25778 /* Reflect+Parse.swift in Sources */,
 				A8BA476A1CEDAEDA00FB8916 /* JYHomeHeadView.swift in Sources */,
 				A8105C6A1CEC630600F25778 /* JYHomeBottomView.swift in Sources */,
 				A8105C5E1CEC628100F25778 /* Reflect+Class.swift in Sources */,
+				A8FE6B571CF2E97300EF32B3 /* LJChangePassWordViewController.m in Sources */,
+				A8FE6B591CF2E97300EF32B3 /* LJChangePersonInfoController.m in Sources */,
 				A87C1DC61CE9A24D00E0285F /* AppDelegate.swift in Sources */,
+				A8FE6B5F1CF2E97300EF32B3 /* LJRegisterViewController.m in Sources */,
 				A8105C611CEC628100F25778 /* Reflect+Type.swift in Sources */,
+				A8E8343B1CF2EECF00BA5166 /* MTColor.m in Sources */,
 				A8A45A181CF2D7B500B33DFD /* UIViewController+Loading.swift in Sources */,
 				A8A45A091CF2969D00B33DFD /* HomeDetailViewController.swift in Sources */,
 				A8105C7C1CEC7EF200F25778 /* DestCell.swift in Sources */,
 				A8105C621CEC628100F25778 /* Reflect.swift in Sources */,
 				A8BA47681CED9C8400FB8916 /* CyclePictureView.swift in Sources */,
+				A8FE6B611CF2E97300EF32B3 /* MTChangePassWordController.m in Sources */,
 				A8105CBD1CECB60800F25778 /* HomeViewController.swift in Sources */,
+				A8E834411CF2EF4800BA5166 /* NSString+NSPredicate.m in Sources */,
+				A8FE6B7C1CF2EC4300EF32B3 /* NSString+MD5.m in Sources */,
+				A8FE6B6A1CF2E97300EF32B3 /* LJHeadImageCell.m in Sources */,
 				A8A45A1D1CF2D80F00B33DFD /* JYCuxtomTool.swift in Sources */,
+				A8FE6B5C1CF2E97300EF32B3 /* LJLooginViewController.m in Sources */,
 				A8105CB91CECB5DC00F25778 /* FilterFreedoms.swift in Sources */,
 				A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */,
 				A8A45A131CF2D7B500B33DFD /* UIButton+Typesetting.swift in Sources */,
+				A8FE6B731CF2E9A800EF32B3 /* TPBasicViewController.m in Sources */,
 				A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */,
 				A8BA47671CED9C8400FB8916 /* CyclePictureCell.swift in Sources */,
 				A8105C701CEC636E00F25778 /* DestinationHots.swift in Sources */,
 				A87C1DFB1CE9A3A200E0285F /* JYNetWorking.swift in Sources */,
+				A8087F1F1CF56E24005DB30A /* TPPushDemandTopView.m in Sources */,
 				A8A45A1C1CF2D80F00B33DFD /* CoreAnimationEffect.swift in Sources */,
 				A8105C721CEC63AD00F25778 /* DestinationViewController.swift in Sources */,
 				A8105C601CEC628100F25778 /* Reflect+Property.swift in Sources */,
+				A8FE6B5A1CF2E97300EF32B3 /* LJFindPasswordViewController.m in Sources */,
 				A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */,
+				A8FE6B681CF2E97300EF32B3 /* YYAccountTool.m in Sources */,
 				A8105C5F1CEC628100F25778 /* Reflect+Other.swift in Sources */,
 				A8105C5D1CEC628100F25778 /* Reflect+Convert.swift in Sources */,
 				A8A45A0B1CF2987E00B33DFD /* BasicViewController.swift in Sources */,
@@ -708,6 +898,8 @@
 				A8A45A221CF2D9FA00B33DFD /* FreedomDetail.swift in Sources */,
 				A8A45A141CF2D7B500B33DFD /* UIImage+Color.swift in Sources */,
 				A8A45A151CF2D7B500B33DFD /* UImage+Size.swift in Sources */,
+				A8FE6B671CF2E97300EF32B3 /* MTUser.m in Sources */,
+				A8FE6B761CF2EA0A00EF32B3 /* TPWeekRecommendTopView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -862,7 +1054,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = juyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "99132e55-75a7-4a20-b8c7-83d0393201b2";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/caobo/Documents/聚游分期/JuYou/JuYou/NavBar/ViewController/Bridge-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT} /**";
 			};
@@ -882,7 +1074,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = juyou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "99132e55-75a7-4a20-b8c7-83d0393201b2";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/caobo/Documents/聚游分期/JuYou/JuYou/NavBar/ViewController/Bridge-Header.h";
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT} /**";
 			};
 			name = Release;

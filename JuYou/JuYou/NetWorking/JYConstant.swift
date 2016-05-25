@@ -9,6 +9,8 @@
 
 import UIKit
 
+
+
 let kMAIN_SIZE = UIScreen.mainScreen().bounds
 
 let SUCCESS_CODE = 1
@@ -26,9 +28,15 @@ func SERVER_URL(interfaceName:String) -> String {
         //测试服务器
          SERVER_URL="http://juyoufenqi.com/juyou/"+interfaceName
     }
-    
     return SERVER_URL
 }
+
+#if kHOST_ProDuct
+    let SERVER_URLs="http://juyoufenqi.com/juyou/"
+#else
+    let SERVER_URLs="http://juyoufenqi.com/juyou/"
+#endif
+
 
 //MARK 常量和宏方法
 let Screen_height=UIScreen.mainScreen().bounds.size.height
@@ -69,8 +77,8 @@ let NavBar = NavBarVC.bottomView
 let kDestinationSearchHot="destination/searchHot.do"
 let kFilterFreedom="freedom/filterFreedom.do"
 let kSearchFreedomById="freedom/searchFreedomById.do"
-
-
+let kUserLogin = "user/login.do"
+let kSearchUserById = "user/searchUserById.do"
 
 
 

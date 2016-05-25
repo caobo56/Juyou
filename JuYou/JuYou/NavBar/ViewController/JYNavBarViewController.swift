@@ -13,7 +13,15 @@ class JYNavBarViewController: UITabBarController {
     var bottomView:JYHomeBottomView = JYHomeBottomView.init(frame: CGRectZero)
     
     //MARK: - View Lifecycle （View 的生命周期）
+    
     override func awakeFromNib() {
+        var tabAry:[UIViewController] = self.viewControllers!
+        //我的
+        let mineVC: LJPersonalTableViewController = LJPersonalTableViewController()
+        let navMine: UINavigationController = UINavigationController(rootViewController: mineVC)
+        mineVC.navigationController!.navigationBarHidden = true
+        tabAry[2] = navMine
+        self.viewControllers = tabAry
         self.setTabBarUI()
     }
     
@@ -48,7 +56,11 @@ class JYNavBarViewController: UITabBarController {
     }
     
     @objc private func mineBtnPress() {
-        self.selectedIndex = 2
+        TPLoginMaster.executionWithCurrentVC(self) { (LoginState:Bool) in
+            if LoginState {
+                self.selectedIndex = 2
+            }
+        }
     }
     
     //MARK: - Public

@@ -75,7 +75,7 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
 
         weak var weakSelf = self
         let parmasCategory:NSDictionary = ["freedom.category":"1","freedom.orderBy":"0","pager.pageNum":"0","pager.pageSize":"2"]
-        getFilterFreedom(parmasCategory,sucess:{ (datas) in
+        JYAPIClient.getFilterFreedom(parmasCategory,sucess:{ (datas) in
             weakSelf!.tableView.mj_header.endRefreshing()
             weakSelf!.tableView.mj_footer.endRefreshing()
             if (!datas.isEqual(NSNull()) ) {
@@ -89,7 +89,7 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
                 weakSelf!.tableView.mj_footer.endRefreshing()
         })
         let parmasIsHot:NSDictionary = ["freedom.isHot":"1","freedom.orderBy":"0","pager.pageNum":"0","pager.pageSize":"5"]
-        getFilterFreedom(parmasIsHot,sucess:{ (datas) in
+        JYAPIClient.getFilterFreedom(parmasIsHot,sucess:{ (datas) in
             weakSelf!.tableView.mj_header.endRefreshing()
             weakSelf!.tableView.mj_footer.endRefreshing()
             if (!datas.isEqual(NSNull()) ) {
@@ -131,7 +131,6 @@ class HomeViewController: BasicViewController,UITableViewDelegate,UITableViewDat
         self.navigationController?.pushViewController(detail, animated: yes)
     }
 
-    
     //MARK: - cyclePictureView代理方法
     func cyclePictureView(cyclePictureView: CyclePictureView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
         let detail:HomeDetailViewController = HomeDetailViewController.init()
