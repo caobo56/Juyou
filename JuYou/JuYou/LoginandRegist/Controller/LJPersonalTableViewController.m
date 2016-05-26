@@ -27,6 +27,7 @@
 @property (nonatomic,strong) LJHeadImageCell *headCell;
 @property (nonatomic,strong) NSArray *demandArray;
 @property (nonatomic,strong) NSMutableDictionary *dict;
+@property (nonatomic,strong) NSArray * monthPayArr;
 @end
 
 @implementation LJPersonalTableViewController{
@@ -41,6 +42,7 @@
 }
 
 - (void)viewDidLoad {
+    _monthPayArr = [[NSArray alloc]init];
     [super viewDidLoad];
     [self initUI];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
@@ -90,14 +92,24 @@
         NSDictionary * dict = (NSDictionary *)data;
         if (dict) {
             blkSelf.dict = [NSMutableDictionary dictionaryWithDictionary:dict];
-            [self lodaData];
+            [blkSelf lodaData];
         }
     } failure:^(id  _Nonnull data) {
         
     }];
+    
+    [JYAPIClient searchMonthPay:dict sucess:^(id  _Nonnull data) {
+        NSArray * arr = (NSArray *)data;
+        if (arr) {
+            blkSelf.monthPayArr = arr;
+            [blkSelf lodaData];
+        }
+    } failure:^(id  _Nonnull data) {
+        
+    }];
+    
 }
-- (void)lodaData
-{
+- (void)lodaData{
     NSString *headImage = self.dict[@"avatar"];
     NSString *nickStr = self.dict[@"nickName"];
     if (![headImage isEqual:[NSNull null]]) {
@@ -109,8 +121,7 @@
 }
 
 #pragma mark - Table view data source
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section ==1) {
         return 25;
     }else if(section ==2)

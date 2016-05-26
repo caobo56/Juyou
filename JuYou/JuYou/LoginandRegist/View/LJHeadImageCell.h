@@ -14,3 +14,11 @@
 @property (weak, nonatomic) IBOutlet UILabel *nickLabel;
 
 @end
+
+@interface PresonalHeadView : UIView
+
+@property (nonatomic,strong) LJHeadImageCell * head;
+@property (nonatomic,strong) UILabel * monthPayLable;
+@property (nonatomic,strong) UILabel * enableCreditLable;
+
+@end
