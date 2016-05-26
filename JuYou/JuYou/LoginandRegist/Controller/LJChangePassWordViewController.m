@@ -42,7 +42,7 @@
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     [topView removeFromSuperview];
-//    self.navigationItem.hidesBackButton = NO;
+    //    self.navigationItem.hidesBackButton = NO;
 }
 
 -(void)initUI{
@@ -70,25 +70,32 @@
         [self showHUDWithText:@"两次密码输入不一致"];
         return;
     }
-    [self showLoadingHUDWithText:nil];
     NSString *md5PW = [self.pw2TextField.text MD5Hash];
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
     [dic setValue:self.phoneNum forKey:@"userInfo.mobileNum"];
     [dic setValue:md5PW forKey:@"userInfo.password"];
     __block LJChangePassWordViewController * blkSelf = self;
-//    [[JDDAPIs sharedJDDAPIs]resetPasswordByMobileNumWithParameters:dic WithBlock:^(NSDictionary *dict, NSString *error) {
-//        [blkSelf hideAllHUD];
-//        if (dict) {
-//            [blkSelf showHUDWithText:@"修改成功"];
-//            [blkSelf.navigationController popToRootViewControllerAnimated:YES];
-//        }else{
-//            if (error) {
-//                [blkSelf showHUDWithText:error];
-//            }else{
-//                [blkSelf showHUDWithText:@"加载失败，请稍后重试"];
-//            }
-//        }
-//    }];
+    
+    [JYAPIClient resetPasswordByMobileNum:dic sucess:^(id  _Nonnull data) {
+        [blkSelf showHUDWithText:@"修改成功"];
+        [blkSelf.navigationController popToRootViewControllerAnimated:YES];
+    } failure:^(id  _Nonnull data) {
+        
+    } ];
+    
+    //    [[JDDAPIs sharedJDDAPIs]resetPasswordByMobileNumWithParameters:dic WithBlock:^(NSDictionary *dict, NSString *error) {
+    //        [blkSelf hideAllHUD];
+    //        if (dict) {
+    //            [blkSelf showHUDWithText:@"修改成功"];
+    //            [blkSelf.navigationController popToRootViewControllerAnimated:YES];
+    //        }else{
+    //            if (error) {
+    //                [blkSelf showHUDWithText:error];
+    //            }else{
+    //                [blkSelf showHUDWithText:@"加载失败，请稍后重试"];
+    //            }
+    //        }
+    //    }];
 }
 
 @end

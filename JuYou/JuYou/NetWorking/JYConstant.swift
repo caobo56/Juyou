@@ -79,6 +79,19 @@ let kFilterFreedom="freedom/filterFreedom.do"
 let kSearchFreedomById="freedom/searchFreedomById.do"
 let kUserLogin = "user/login.do"
 let kSearchUserById = "user/searchUserById.do"
+let kUserGetAuthCode = "user/getAuthCode.do"
+let kUserRegist = "/user/regist.do"
+let kResetPasswordByMobileNum = "/user/resetPasswordByMobileNum.do"
+let kSearchMonthPay = "/user/searchMonthPay.do"
+
+
+
+
+
+
+
+
+
 
 
 

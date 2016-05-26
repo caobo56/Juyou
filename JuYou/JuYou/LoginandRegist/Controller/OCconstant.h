@@ -26,7 +26,7 @@
 #define middleBarH 45
 
 #define SharedAppDelegate ((AppDelegate*)[[UIApplication sharedApplication] delegate])
-#define TabVC  (JDDTabBarController *)([[UIApplication sharedApplication] delegate].window.rootViewController)
+#define TabVC  (UIViewController *)([[UIApplication sharedApplication] delegate].window.rootViewController)
 
 
 #import "JuYou-Swift.h"

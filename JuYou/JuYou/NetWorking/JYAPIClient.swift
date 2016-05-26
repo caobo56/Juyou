@@ -40,13 +40,13 @@ class JYAPIClient: NSObject {
     
     class func userLogin(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
         JYNetWorking.sharedNetWorking.getLogin(kUserLogin,
-                                                 params: params,
-                                                 sucess: sucess,
-                                                 failure:failure
+                                               params: params,
+                                               sucess: sucess,
+                                               failure:failure
         )
     }
     
-    //行程详情
+    //获取用户详情
     class func searchUserById(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
         JYNetWorking.sharedNetWorking.getRequest(kSearchUserById,
                                                  params: params,
@@ -54,6 +54,44 @@ class JYAPIClient: NSObject {
                                                  failure:failure
         )
     }
+    
+    //获取注册验证码
+    class func getAuthCode(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
+        JYNetWorking.sharedNetWorking.getAuthCode(kUserGetAuthCode,
+                                                  params: params,
+                                                  sucess: sucess,
+                                                  failure:failure
+        )
+    }
+    
+    //注册
+    class func regist(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
+        JYNetWorking.sharedNetWorking.getLogin(kUserRegist,
+                                               params: params,
+                                               sucess: sucess,
+                                               failure:failure
+        )
+    }
+    
+    //修改密码
+    class func resetPasswordByMobileNum(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
+        JYNetWorking.sharedNetWorking.getLogin(kResetPasswordByMobileNum,
+                                               params: params,
+                                               sucess: sucess,
+                                               failure:failure
+        )
+    }
+    
+    class func searchMonthPay(params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
+        JYNetWorking.sharedNetWorking.getRequest(kSearchMonthPay,
+                                                 params: params,
+                                                 sucess: sucess,
+                                                 failure:failure
+        )
+    }
+    
+    
+    
 }
 
 

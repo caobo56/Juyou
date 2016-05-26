@@ -56,7 +56,7 @@
 -(void)viewDidDisappear:(BOOL)animated{
     [super viewDidDisappear:animated];
     [topView removeFromSuperview];
-//    self.navigationItem.hidesBackButton = NO;
+    //    self.navigationItem.hidesBackButton = NO;
 }
 
 -(void)initUI{
@@ -72,9 +72,7 @@
 }
 
 -(void)backBtnPress{
-//    [topView removeFromSuperview];
     [self.navigationController popViewControllerAnimated:YES];
-//    self.navigationItem.hidesBackButton = NO;
 }
 
 - (IBAction)authCodeBtnClick:(id)sender
@@ -83,26 +81,20 @@
         [self showHUDWithText:@"请输入正确的手机号"];
         return;
     }
-    [self showLoadingHUD];
     __block LJRegisterViewController * weakSelf = self;
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic setValue:self.phoneNumTextField.text forKey:@"userInfo.mobileNum"];
-//    [[JDDAPIs sharedJDDAPIs]getAuthCodeWithParameters:dic WithBlock:^(NSDictionary *dict, NSString *error) {
-//        [self hideAllHUD];
-//        if (dict) {
-//            self.phoneNum = self.phoneNumTextField.text;
-//            self.authCode = [dict objectForKeyNotNull:@"authCode"];
-//            self.authCodeBtn.userInteractionEnabled = NO;
-//            [weakSelf showHUDWithText:@"验证码已发送到手机，请耐心等待"];
-//        }else{
-//            if (error) {
-//                [weakSelf showHUDWithText:error];
-//            }else{
-//                [weakSelf showHUDWithText:@"加载失败，请稍后重试"];
-//            }
-//        }
-//    }];
-    
+    [JYAPIClient getAuthCode:dic sucess:^(id  _Nonnull data) {
+        NSString * authCode = (NSString *)data;
+        if (authCode) {
+            self.phoneNum = self.phoneNumTextField.text;
+            self.authCode = authCode;
+            self.authCodeBtn.userInteractionEnabled = NO;
+            [weakSelf showHUDWithText:@"验证码已发送到手机，请耐心等待"];
+        }
+    } failure:^(id  _Nonnull data) {
+        
+    }];
 }
 
 - (IBAction)regiterBtnClick:(id)sender
@@ -130,7 +122,6 @@
     }
     
     NSString *md5PW = [self.pwTextField.text MD5Hash];
-    [self showLoadingHUDWithText:nil];
     
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
     [dic setObject:self.phoneNumTextField.text forKey:@"userInfo.mobileNum"];
@@ -138,37 +129,47 @@
     [dic setObject:md5PW forKey:@"userInfo.password"];
     [dic setObject:self.nickNameTextField.text forKey:@"userInfo.nickName"];
     __block LJRegisterViewController * blkSelf = self;
-//    [[JDDAPIs sharedJDDAPIs]userRegistWithParameters:dic WithBlock:^(NSDictionary *dict, NSString *error) {
-//        [blkSelf hideAllHUD];
-//        if (dict) {
-//            [blkSelf showHUDWithText:@"注册成功"];
-//            
-//            [blkSelf.navigationController popViewControllerAnimated:YES];
-//        }else{
-//            if (error) {
-//                [blkSelf showHUDWithText:error];
-//            } else {
-//                [blkSelf showHUDWithText:@"加载失败，请稍后重试"];
-//            }
-//        }
-//    }];
+    [JYAPIClient regist:dic sucess:^(id  _Nonnull data) {
+        NSDictionary * dict = (NSDictionary *)data;
+        if (dict) {
+            [[UIApplication sharedApplication].delegate.window.rootViewController showHUDWithText:@"注册成功"];
+            [blkSelf.navigationController popViewControllerAnimated:YES];
+        }
+    } failure:^(id  _Nonnull data) {
+        
+    }];
+    
+    //    [[JDDAPIs sharedJDDAPIs]userRegistWithParameters:dic WithBlock:^(NSDictionary *dict, NSString *error) {
+    //        [blkSelf hideAllHUD];
+    //        if (dict) {
+    //            [blkSelf showHUDWithText:@"注册成功"];
+    //
+    //            [blkSelf.navigationController popViewControllerAnimated:YES];
+    //        }else{
+    //            if (error) {
+    //                [blkSelf showHUDWithText:error];
+    //            } else {
+    //                [blkSelf showHUDWithText:@"加载失败，请稍后重试"];
+    //            }
+    //        }
+    //    }];
     
     //
-//    [MTHttpRequest httpRequestRegist:self.phoneNumTextField.text nickName:self.nickNameTextField.text checkCode:self.authCodeTextField.text password:md5PW success:^(id responseObj)
-//    {
-//        [MBProgressHUD hideHUDForView:self.view];
-//        MLJLog(@"%@",responseObj);
-//        NSDictionary *result = (NSDictionary *)responseObj;
-//            [MBProgressHUD showSuccess:@"注册成功"];
-//            MTUser *userInfo = [MTUser objectWithKeyValues:[result objectForKey:@"userInfo"]];
-//            [YYAccountTool saveAccount:userInfo];
-//        [self.navigationController popViewControllerAnimated:YES];
-//        
-//    } failure:^(NSError *error) {
-//       NSString *str =  error.userInfo[NSLocalizedDescriptionKey];
-//        [MBProgressHUD showError:str];
-//        [MBProgressHUD hideHUDForView:self.view];
-//    }];
+    //    [MTHttpRequest httpRequestRegist:self.phoneNumTextField.text nickName:self.nickNameTextField.text checkCode:self.authCodeTextField.text password:md5PW success:^(id responseObj)
+    //    {
+    //        [MBProgressHUD hideHUDForView:self.view];
+    //        MLJLog(@"%@",responseObj);
+    //        NSDictionary *result = (NSDictionary *)responseObj;
+    //            [MBProgressHUD showSuccess:@"注册成功"];
+    //            MTUser *userInfo = [MTUser objectWithKeyValues:[result objectForKey:@"userInfo"]];
+    //            [YYAccountTool saveAccount:userInfo];
+    //        [self.navigationController popViewControllerAnimated:YES];
+    //
+    //    } failure:^(NSError *error) {
+    //       NSString *str =  error.userInfo[NSLocalizedDescriptionKey];
+    //        [MBProgressHUD showError:str];
+    //        [MBProgressHUD hideHUDForView:self.view];
+    //    }];
 }
 
 

@@ -154,7 +154,7 @@
         </view>
     </objects>
     <resources>
-        <image name="login_logo" width="95" height="55"/>
+        <image name="login_logo" width="60" height="60"/>
         <image name="mobile" width="25" height="25"/>
         <image name="password_login" width="25" height="25"/>
     </resources>

@@ -7,8 +7,7 @@
 //
 
 #import "TPBasicViewController.h"
-//#import "JDDTabBarController.h"
-
+#import "OCconstant.h"
 
 @implementation TPBasicViewController
 
@@ -17,10 +16,16 @@
     [[[UIApplication sharedApplication] keyWindow] endEditing:YES];
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    JYNavBarViewController * nav = (JYNavBarViewController *)TabVC;
+    [nav hidesBottomBar:YES];
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-//    [TabVC bottomView].hidden = YES;
-#warning 隐藏tabbar
+
 }
 
 @end

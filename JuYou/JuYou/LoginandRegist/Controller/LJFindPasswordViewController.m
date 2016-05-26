@@ -72,29 +72,22 @@
         return;
     }
     
-    [self showLoadingHUDWithText:nil];
     __block LJFindPasswordViewController * weakSelf = self;
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
     [dic setValue:self.phoneTextField.text forKey:@"userInfo.mobileNum"];
-//    [[JDDAPIs sharedJDDAPIs]getAuthCodeWithParameters:dic WithBlock:^(NSDictionary *dict, NSString *error) {
-//        [self hideAllHUD];
-//        if (dict) {
-//            self.phoneNum = self.phoneTextField.text;
-//            self.authCode = [dict objectForKeyNotNull:@"authCode"];
-//            self.authCodeBtn.userInteractionEnabled = NO;
-//            [weakSelf showHUDWithText:@"验证码已发送到手机，请耐心等待"];
-//        }else{
-//            if (error) {
-//                [weakSelf showHUDWithText:error];
-//            }else{
-//                [weakSelf showHUDWithText:@"加载失败，请稍后重试"];
-//            }
-//        }
-//    }];
+    [JYAPIClient getAuthCode:dic sucess:^(id  _Nonnull data) {
+        NSString * authCode = (NSString *)data;
+        if (authCode) {
+            self.authCode = authCode;
+            self.authCodeBtn.userInteractionEnabled = NO;
+            [weakSelf showHUDWithText:@"验证码已发送到手机，请耐心等待"];
+        }
+    } failure:^(id  _Nonnull data) {
+        
+    }];
 }
 
-- (IBAction)nextStep:(id)sender
-{
+- (IBAction)nextStep:(id)sender{
     if ([self.authCode isEqualToString:self.authCodeTextField.text]) {
         LJChangePassWordViewController *vc = [[LJChangePassWordViewController alloc] init];
         vc.phoneNum = self.phoneNum;

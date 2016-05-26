@@ -54,6 +54,12 @@
     self.navigationController.navigationBar.barTintColor = NavBgColor;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = NO;
+}
+
+
 - (void)leftBaritemClick{
     self.LoginMannger(NO);
     [self dismissViewControllerAnimated:YES completion:nil];

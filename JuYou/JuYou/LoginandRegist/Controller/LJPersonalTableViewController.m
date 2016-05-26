@@ -32,36 +32,38 @@
 @implementation LJPersonalTableViewController{
     TPPushDemandTopView * topView;
 }
-- (NSMutableDictionary *)dict
-{
+
+- (NSMutableDictionary *)dict{
     if (_dict==nil) {
         _dict = [[NSMutableDictionary alloc]init];
     }
     return _dict;
 }
-- (void)viewWillAppear:(BOOL)animated
-{
-    [super viewWillAppear:animated];
-    self.navigationController.navigationBarHidden = YES;
-    [self searchUserById];
-}
-- (void)viewDidAppear:(BOOL)animated
-{
-    [super viewDidAppear:animated];
-    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
-//    [TabVC bottomView].hidden = NO;
-#warning tabbar隐藏
-}
--(void)viewWillDisappear:(BOOL)animated{
-    [super viewWillDisappear:animated];
-}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self initUI];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _headCell = [LJHeadImageCell headCell];
-    _demandArray = @[@"我的订单",@"我的需求"];
+    _demandArray = @[@"我的订单",@"我的认证"];
     self.navigationController.navigationBar.hidden = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    self.navigationController.navigationBarHidden = YES;
+    [self searchUserById];
+}
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.navigationController.interactivePopGestureRecognizer.enabled = NO;
+    JYNavBarViewController * navbar = (JYNavBarViewController *)TabVC;
+    [navbar hidesBottomBar:NO];
+}
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
 }
 
 -(void)initUI{
@@ -72,18 +74,14 @@
     [topView setTitle:@"个 人"];
     topView.top = -20;
     [topView.backBtn addTarget:self action:@selector(backBtnPress) forControlEvents:UIControlEventTouchUpInside];
-//    self.tableView.size = CGSizeMake(Screen_weight, Screen_height-NavBarH-StateBarH);
 }
 
 -(void)backBtnPress{
-    //    [topView removeFromSuperview];
     [self.navigationController popViewControllerAnimated:YES];
-    //    self.navigationItem.hidesBackButton = NO;
 }
 
 //查询用户信息
--(void)searchUserById
-{
+-(void)searchUserById{
     MTUser *user = [YYAccountTool account];
     NSMutableDictionary * dict = [[NSMutableDictionary alloc]init];
     [dict setObject:user.userId forKey:@"userInfo.userId"];
@@ -92,6 +90,7 @@
         NSDictionary * dict = (NSDictionary *)data;
         if (dict) {
             blkSelf.dict = [NSMutableDictionary dictionaryWithDictionary:dict];
+            [self lodaData];
         }
     } failure:^(id  _Nonnull data) {
         
@@ -107,8 +106,8 @@
     if (![nickStr isEqual:[NSNull null]]) {
         _headCell.nickLabel.text = nickStr;
     }
-
 }
+
 #pragma mark - Table view data source
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -147,7 +146,7 @@
         return _demandArray.count;
     }else
     {
-         return 1;
+        return 1;
     }
 }
 
@@ -158,8 +157,8 @@
     }else
     {
         UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:nil];
-         cell.textLabel.textColor = [MTColor contentNormalColor];
-         cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.textLabel.textColor = [MTColor contentNormalColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
         UIView *topview = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width, 0.5)];
         topview.backgroundColor = [UIColor lightGrayColor];
         topview.alpha = 0.3;
@@ -167,20 +166,20 @@
         UIView *buttomview = [[UIView alloc]initWithFrame:CGRectMake(0, 48, self.tableView.frame.size.width, 0.5)];
         buttomview.backgroundColor = [UIColor lightGrayColor];
         buttomview.alpha = 0.3;
-       
+        
         if (indexPath.section==1) {
             if (indexPath.row==0) {
                 [cell.contentView addSubview:topview];
-                [cell.imageView setImage:[UIImage imageNamed:@"my_require_ic"]];
+                [cell.imageView setImage:[UIImage imageNamed:@"price"]];
             }else if(indexPath.row==1)
             {
-                [cell.imageView setImage:[UIImage imageNamed:@"price"]];
+                [cell.imageView setImage:[UIImage imageNamed:@"my_booking_ic"]];
                 [cell.contentView addSubview:topview];
                 [cell.contentView addSubview:buttomview];
             }else
             {
                 [cell.imageView setImage:[UIImage imageNamed:@"my_booking_ic"]];
-//                [cell.contentView addSubview:topview];
+                //                [cell.contentView addSubview:topview];
                 [cell.contentView addSubview:buttomview];
             }
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -194,34 +193,34 @@
             cell.textLabel.textAlignment = NSTextAlignmentCenter;
             cell.contentMode = UIViewContentModeCenter;
         }
-         return cell;
+        return cell;
     }
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
-        UIStoryboard *board = [UIStoryboard storyboardWithName:@"changPersonInfn" bundle:nil];
-        LJChangePersonInfoController *vc = [board instantiateViewControllerWithIdentifier:@"LJChangePersonInfoController"];
-        vc.dataDict = self.dict;
-//        [TabVC bottomView].hidden = YES;
-    [self.navigationController pushViewController:vc animated:YES];
+        //        UIStoryboard *board = [UIStoryboard storyboardWithName:@"changPersonInfn" bundle:nil];
+        //        LJChangePersonInfoController *vc = [board instantiateViewControllerWithIdentifier:@"LJChangePersonInfoController"];
+        //        vc.dataDict = self.dict;
+        ////        [TabVC bottomView].hidden = YES;
+        //    [self.navigationController pushViewController:vc animated:YES];
     }else if (indexPath.section ==1)
     {
         if (indexPath.row == 0){//我的需求
-//            MyOrderListVC *myOrder = [[MyOrderListVC alloc]init];
-//            [self.navigationController pushViewController:myOrder animated:YES];
-
+            //            MyOrderListVC *myOrder = [[MyOrderListVC alloc]init];
+            //            [self.navigationController pushViewController:myOrder animated:YES];
+            
         }else if (indexPath.row==1){
-//            MyNeedListVC *myOrder = [[MyNeedListVC alloc]init];
-//            [self.navigationController pushViewController:myOrder animated:YES];
+            //            MyNeedListVC *myOrder = [[MyNeedListVC alloc]init];
+            //            [self.navigationController pushViewController:myOrder animated:YES];
         }else{
-
+            
         }
     }else{
         UIActionSheet *sheet = [[UIActionSheet alloc]initWithTitle:@"您确定退出登录吗" delegate:self cancelButtonTitle:@"点错了" destructiveButtonTitle:@"确定" otherButtonTitles:nil, nil];
         [sheet showInView:self.view];
-      
+        
     }
 }
 
@@ -239,7 +238,7 @@
                 [self searchUserById];
             }else{
                 [blkSelf.navigationController popViewControllerAnimated:YES];
-//                [TabVC setSelectedIndex:0];
+                //                [TabVC setSelectedIndex:0];
             }
         };
         UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:vc];

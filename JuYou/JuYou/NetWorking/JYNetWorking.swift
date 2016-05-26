@@ -38,6 +38,7 @@ class JYNetWorking: NSObject {
                 RootVC!.showHUDWithText("请求发送失败，请稍后重试！")
                 return
             }
+            print(response.result.value)
             let json = JSON(value)
             if(json["isSuccess"].intValue == SUCCESS_CODE){
                 let datas:AnyObject = value.valueForKey("datas")!
@@ -69,6 +70,34 @@ class JYNetWorking: NSObject {
             if(json["isSuccess"].intValue == SUCCESS_CODE){
                 print(value.valueForKey("userInfo"))
                 let datas:AnyObject = value.valueForKey("userInfo")!
+                sucess(data: datas)
+                failure(data: json["isSuccess"].intValue)
+            }else{
+                if (json["errorCode"].intValue > HUDERROR_CODE){
+                    //此处为请求链接成功，后台失败errorCode>HUDERROR_CODE时，需弹出HUD
+                    RootVC!.showHUDWithText(json["errorMsg"].string!)
+                }//可能会改为 switch-case 看具体业务需求弹相应的HUD
+                sucess(data: NSNull())
+                failure(data: FAILURE_CODE)
+            }
+        }
+    }
+    
+    func getAuthCode(interfaceName:String,params:NSDictionary,sucess:SucessBlock,failure:FailureBlock){
+        RootVC!.showLoadingHUD()
+        Alamofire.request(.POST, SERVER_URL(interfaceName),parameters: params as? [String : AnyObject]).responseJSON() {
+            response in
+            RootVC?.hideAllHUD()
+            guard let value = response.result.value else {
+                sucess(data: NSNull())
+                failure(data: FAILURE_CODE)
+                RootVC!.showHUDWithText("请求发送失败，请稍后重试！")
+                return
+            }
+            
+            let json = JSON(value)
+            if(json["isSuccess"].intValue == SUCCESS_CODE){
+                let datas:AnyObject = value.valueForKey("authCode")!
                 sucess(data: datas)
                 failure(data: json["isSuccess"].intValue)
             }else{
