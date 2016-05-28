@@ -10,6 +10,7 @@
 		7E18E0F80119EA6BC0879440 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2BE6D758F347E1E3CB70D87 /* Pods.framework */; };
 		A80754251CEA9F56004ABC0D /* JYConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754241CEA9F56004ABC0D /* JYConstant.swift */; };
 		A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80754261CEAA709004ABC0D /* JYAPIClient.swift */; };
+		A80875B21CF94E5300B3167A /* HomeDetailHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A80875B11CF94E5300B3167A /* HomeDetailHeadView.swift */; };
 		A8087F1F1CF56E24005DB30A /* TPPushDemandTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = A8087F1E1CF56E24005DB30A /* TPPushDemandTopView.m */; };
 		A8105C3F1CEC008300F25778 /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C3E1CEC008300F25778 /* MineViewController.swift */; };
 		A8105C5B1CEC628100F25778 /* Reflect+ArcFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C501CEC628100F25778 /* Reflect+ArcFile.swift */; };
@@ -27,6 +28,8 @@
 		A8105C7C1CEC7EF200F25778 /* DestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105C7B1CEC7EF200F25778 /* DestCell.swift */; };
 		A8105CB91CECB5DC00F25778 /* FilterFreedoms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105CB81CECB5DC00F25778 /* FilterFreedoms.swift */; };
 		A8105CBD1CECB60800F25778 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8105CBC1CECB60800F25778 /* HomeViewController.swift */; };
+		A833184A1CF9680F0001F084 /* TPRatingStart.m in Sources */ = {isa = PBXBuildFile; fileRef = A83318491CF9680F0001F084 /* TPRatingStart.m */; };
+		A833184C1CF989C10001F084 /* HomeDetailFootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A833184B1CF989C10001F084 /* HomeDetailFootView.swift */; };
 		A87C1DC61CE9A24D00E0285F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87C1DC51CE9A24D00E0285F /* AppDelegate.swift */; };
 		A87C1DCD1CE9A24D00E0285F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A87C1DCB1CE9A24D00E0285F /* Main.storyboard */; };
 		A87C1DCF1CE9A24D00E0285F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A87C1DCE1CE9A24D00E0285F /* Assets.xcassets */; };
@@ -107,6 +110,7 @@
 		547493131F3A54D7BEB20001 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		A80754241CEA9F56004ABC0D /* JYConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYConstant.swift; sourceTree = "<group>"; };
 		A80754261CEAA709004ABC0D /* JYAPIClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JYAPIClient.swift; sourceTree = "<group>"; };
+		A80875B11CF94E5300B3167A /* HomeDetailHeadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailHeadView.swift; sourceTree = "<group>"; };
 		A8087F1D1CF56E24005DB30A /* TPPushDemandTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPPushDemandTopView.h; sourceTree = "<group>"; };
 		A8087F1E1CF56E24005DB30A /* TPPushDemandTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPPushDemandTopView.m; sourceTree = "<group>"; };
 		A8105C3E1CEC008300F25778 /* MineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +129,9 @@
 		A8105C7B1CEC7EF200F25778 /* DestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DestCell.swift; sourceTree = "<group>"; };
 		A8105CB81CECB5DC00F25778 /* FilterFreedoms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterFreedoms.swift; sourceTree = "<group>"; };
 		A8105CBC1CECB60800F25778 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A83318481CF9680F0001F084 /* TPRatingStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPRatingStart.h; sourceTree = "<group>"; };
+		A83318491CF9680F0001F084 /* TPRatingStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPRatingStart.m; sourceTree = "<group>"; };
+		A833184B1CF989C10001F084 /* HomeDetailFootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeDetailFootView.swift; sourceTree = "<group>"; };
 		A83C14F01CF2F58F00C493F3 /* Bridge-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridge-Header.h"; sourceTree = "<group>"; };
 		A83C14F11CF2FA1500C493F3 /* OCconstant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCconstant.h; sourceTree = "<group>"; };
 		A87C1DC21CE9A24D00E0285F /* JuYou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuYou.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -424,6 +431,8 @@
 			children = (
 				A8BA47161CED432F00FB8916 /* IsHotCell.swift */,
 				A8BA47181CED928700FB8916 /* ISHotHeadView.swift */,
+				A80875B11CF94E5300B3167A /* HomeDetailHeadView.swift */,
+				A833184B1CF989C10001F084 /* HomeDetailFootView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -632,6 +641,8 @@
 				A8FE6B4D1CF2E97300EF32B3 /* LvUIPickerViewOne.h */,
 				A8FE6B4E1CF2E97300EF32B3 /* LvUIPickerViewOne.m */,
 				A8FE6B4F1CF2E97300EF32B3 /* LvUIPickerViewOne.xib */,
+				A83318481CF9680F0001F084 /* TPRatingStart.h */,
+				A83318491CF9680F0001F084 /* TPRatingStart.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -858,6 +869,7 @@
 				A8BA476A1CEDAEDA00FB8916 /* JYHomeHeadView.swift in Sources */,
 				A8105C6A1CEC630600F25778 /* JYHomeBottomView.swift in Sources */,
 				A8105C5E1CEC628100F25778 /* Reflect+Class.swift in Sources */,
+				A833184C1CF989C10001F084 /* HomeDetailFootView.swift in Sources */,
 				A8FE6B571CF2E97300EF32B3 /* LJChangePassWordViewController.m in Sources */,
 				A8FE6B591CF2E97300EF32B3 /* LJChangePersonInfoController.m in Sources */,
 				A87C1DC61CE9A24D00E0285F /* AppDelegate.swift in Sources */,
@@ -875,6 +887,7 @@
 				A8FE6B7C1CF2EC4300EF32B3 /* NSString+MD5.m in Sources */,
 				A8FE6B6A1CF2E97300EF32B3 /* LJHeadImageCell.m in Sources */,
 				A8A45A1D1CF2D80F00B33DFD /* JYCuxtomTool.swift in Sources */,
+				A833184A1CF9680F0001F084 /* TPRatingStart.m in Sources */,
 				A8FE6B5C1CF2E97300EF32B3 /* LJLooginViewController.m in Sources */,
 				A8105CB91CECB5DC00F25778 /* FilterFreedoms.swift in Sources */,
 				A80754271CEAA709004ABC0D /* JYAPIClient.swift in Sources */,
@@ -891,6 +904,7 @@
 				A8FE6B5A1CF2E97300EF32B3 /* LJFindPasswordViewController.m in Sources */,
 				A8BA47171CED432F00FB8916 /* IsHotCell.swift in Sources */,
 				A8FE6B681CF2E97300EF32B3 /* YYAccountTool.m in Sources */,
+				A80875B21CF94E5300B3167A /* HomeDetailHeadView.swift in Sources */,
 				A8105C5F1CEC628100F25778 /* Reflect+Other.swift in Sources */,
 				A8105C5D1CEC628100F25778 /* Reflect+Convert.swift in Sources */,
 				A8A45A0B1CF2987E00B33DFD /* BasicViewController.swift in Sources */,

@@ -79,7 +79,7 @@ class IsHotCell: UITableViewCell {
         self.team_typeLable?.setTop((self.imageV?.bottom)!+6)
         self.team_typeLable?.textColor = UIColorWithHex(0x007dc6, alpha: 1.0)
         self.team_typeLable?.font = UIFont.systemFontOfSize(12)
-        self.team_typeLable?.setborderWidthAndColor(1, borderColor: UIColorWithHex(0x007dc6, alpha: 1.0))
+        self.team_typeLable?.setborderWidthAndColor(1, borderColor: lightBlueColor())
         self.team_typeLable?.textAlignment = NSTextAlignment.Center
         self.team_typeLable?.setRoundedCorner(3)
         self.team_typeLable?.text = "自由行"

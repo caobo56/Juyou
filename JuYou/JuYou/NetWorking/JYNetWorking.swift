@@ -38,7 +38,6 @@ class JYNetWorking: NSObject {
                 RootVC!.showHUDWithText("请求发送失败，请稍后重试！")
                 return
             }
-            print(response.result.value)
             let json = JSON(value)
             if(json["isSuccess"].intValue == SUCCESS_CODE){
                 let datas:AnyObject = value.valueForKey("datas")!

@@ -35,4 +35,17 @@ extension UIButton{
         self.titleEdgeInsets = UIEdgeInsetsMake(0.0, 3.0, 0.0, 0.0)
         self.setTitle(title, forState: stateType)
     }
+    
+    func setHorizontalRightImage(image: UIImage, title: String,stateType: UIControlState,fontSize: CGFloat) {
+        let titleSize: CGSize = title.sizeWithAttributes([NSFontAttributeName: UIFont.systemFontOfSize(12.0)])
+        self.imageView?.contentMode = UIViewContentMode.Center
+        self.imageEdgeInsets = UIEdgeInsetsMake(0.0,titleSize.width+25, 0.0, -titleSize.width)
+        self.setImage(image, forState: stateType)
+        self.titleLabel!.contentMode = UIViewContentMode.Center
+        self.titleLabel!.backgroundColor = UIColor.clearColor()
+        self.titleLabel!.font = UIFont.systemFontOfSize(fontSize)
+        self.setTitleColor(UIColorWithHex(0x26323B, alpha:1.0), forState: stateType)
+        self.titleEdgeInsets = UIEdgeInsetsMake(0, -image.size.width, 0, image.size.width)
+        self.setTitle(title, forState: stateType)
+    }
 }

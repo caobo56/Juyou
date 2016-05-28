@@ -36,4 +36,10 @@ class FreedomDetail: Reflect {
 
     var name: String?
     
+    var traffic:String?
+    
+    var hotel:String?
+
+    
+    
 }

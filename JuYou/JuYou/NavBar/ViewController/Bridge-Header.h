@@ -11,6 +11,7 @@
 
 #import "TPLoginMaster.h"
 #import "LJPersonalTableViewController.h"
+#import "TPRatingStart.h"
 
 #endif /* Bridge_Header_h */
 

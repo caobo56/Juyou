@@ -105,7 +105,7 @@
         NSArray * arr = (NSArray *)data;
         if (arr) {
             blkSelf.monthPayArr = arr;
-//            [blkSelf lodaData];
+            [blkSelf lodaData];
         }
     } failure:^(id  _Nonnull data) {
         

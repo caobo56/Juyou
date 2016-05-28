@@ -67,6 +67,22 @@ func UIColorWithHex(hex:UInt,alpha:CGFloat) -> UIColor {
     return UIColor(red: red, green: green, blue: blue, alpha:alpha)
 }
 
+func orangeColor() -> UIColor {
+    return UIColorWithHex(0xFF7F05, alpha: 1.0)
+}
+
+func cellLineColor() -> UIColor {
+    return UIColorWithHex(0xd1d8df, alpha: 1.0)
+}
+
+func lightBlueColor() -> UIColor {
+    return UIColorWithHex(0x007dc6, alpha: 1.0)
+}
+
+func topBuleColor() -> UIColor {
+    return UIColorWithHex(0x268cff, alpha: 1.0)
+}
+
 let APPDelegate = (UIApplication.sharedApplication().delegate) as! AppDelegate
 let RootVC = APPDelegate.window?.rootViewController
 let NavBarVC = RootVC as! JYNavBarViewController
