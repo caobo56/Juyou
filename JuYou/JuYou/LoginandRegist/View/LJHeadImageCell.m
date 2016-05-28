@@ -24,6 +24,7 @@
     self.headImageView.layer.cornerRadius = self.headImageView.width/2;
 }
 
+
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
 
@@ -31,3 +32,63 @@
 }
 
 @end
+
+@implementation PresonalHeadView
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        [self initUI];
+    }
+    return self;
+}
+
+-(void)initUI{
+    self.size = CGSizeMake(Screen_weight, 85);
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+    
+    UILabel * leftName = [[UILabel alloc]init];
+    leftName.size = CGSizeMake(Screen_weight/2, 30);
+    leftName.textAlignment = NSTextAlignmentCenter;
+    leftName.left = 0;
+    leftName.centerY = self.height/2;
+    leftName.textColor = lightTextColor;
+    leftName.font = [UIFont systemFontOfSize:14.0f];
+    leftName.text = @"本月待还";
+    [self addSubview:leftName];
+    
+    _monthPayLable = [[UILabel alloc]init];
+    _monthPayLable.size = CGSizeMake(Screen_weight/2, 30);
+    _monthPayLable.textAlignment = NSTextAlignmentCenter;
+    _monthPayLable.left = 0;
+    _monthPayLable.top = leftName.bottom;
+    _monthPayLable.textColor = HexRGBAlpha(0xFF7F05, 1.0);
+    _monthPayLable.font = [UIFont systemFontOfSize:14.0f];
+    _monthPayLable.text = @"¥ 0";
+    [self addSubview:_monthPayLable];
+    
+    UILabel * rightName = [[UILabel alloc]init];
+    [self addSubview:rightName];
+    rightName.size = CGSizeMake(Screen_weight/2, 30);
+    rightName.textAlignment = NSTextAlignmentCenter;
+    rightName.right = 0;
+    rightName.centerY = self.height/2;
+    rightName.textColor = lightTextColor;
+    rightName.font = [UIFont systemFontOfSize:14.0f];
+    rightName.text = @"可用额度";
+    
+    _enableCreditLable = [[UILabel alloc]init];
+    _enableCreditLable.size = CGSizeMake(Screen_weight/2, 30);
+    _enableCreditLable.textAlignment = NSTextAlignmentCenter;
+    _enableCreditLable.left = rightName.left;
+    _enableCreditLable.top = rightName.bottom;
+    _enableCreditLable.textColor = HexRGBAlpha(0xFF7F05, 1.0);
+    _enableCreditLable.font = [UIFont systemFontOfSize:14.0f];
+    _enableCreditLable.text = @"¥ 0";
+    [self addSubview:_enableCreditLable];
+
+}
+
+@end
+

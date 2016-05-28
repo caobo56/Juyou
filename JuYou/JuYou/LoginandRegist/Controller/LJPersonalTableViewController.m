@@ -25,6 +25,8 @@
 
 @interface LJPersonalTableViewController ()<UIActionSheetDelegate>
 @property (nonatomic,strong) LJHeadImageCell *headCell;
+@property (nonatomic,strong) PresonalHeadView * secondCell;
+
 @property (nonatomic,strong) NSArray *demandArray;
 @property (nonatomic,strong) NSMutableDictionary *dict;
 @property (nonatomic,strong) NSArray * monthPayArr;
@@ -47,6 +49,7 @@
     [self initUI];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _headCell = [LJHeadImageCell headCell];
+    _secondCell = [[PresonalHeadView alloc]init];
     _demandArray = @[@"我的订单",@"我的认证"];
     self.navigationController.navigationBar.hidden = YES;
 }
@@ -102,7 +105,7 @@
         NSArray * arr = (NSArray *)data;
         if (arr) {
             blkSelf.monthPayArr = arr;
-            [blkSelf lodaData];
+//            [blkSelf lodaData];
         }
     } failure:^(id  _Nonnull data) {
         
@@ -112,11 +115,20 @@
 - (void)lodaData{
     NSString *headImage = self.dict[@"avatar"];
     NSString *nickStr = self.dict[@"nickName"];
+
     if (![headImage isEqual:[NSNull null]]) {
-        [_headCell.headImageView sd_setImageWithURL:[NSURL URLWithString:headImage] placeholderImage:[UIImage imageNamed:@"mine_bg"]];
+        [_headCell.headImageView sd_setImageWithURL:[NSURL URLWithString:headImage] placeholderImage:[UIImage imageNamed:@"touxiang"]];
     }
     if (![nickStr isEqual:[NSNull null]]) {
         _headCell.nickLabel.text = nickStr;
+    }
+    
+    NSString * enableCreditStr = [NSString stringWithFormat:@"¥ %@",self.dict[@"enableCredit"]];
+    _secondCell.enableCreditLable.text =enableCreditStr;
+    if (_monthPayArr&&_monthPayArr.count>0) {
+        if (![_monthPayArr[0] isEqual:[NSNull null]]) {
+            _secondCell.monthPayLable.text = [NSString stringWithFormat:@"¥ %@",_monthPayArr[0]];
+        }
     }
 }
 
@@ -124,9 +136,6 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
     if (section ==1) {
         return 25;
-    }else if(section ==2)
-    {
-        return 20;
     }else
     {
         return 0;
@@ -141,18 +150,22 @@
 {
     if (indexPath.section == 0) {
         return 194;
-    }else
+    }else if(indexPath.section == 1)
+    {
+        return 85;
+    }
+    else
     {
         return 49;
     }
 }
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 3;
+    return 4;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    if (section==1) {
+    if (section==2) {
         
         return _demandArray.count;
     }else
@@ -165,6 +178,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 0) {
         return _headCell;
+    }else if (indexPath.section == 1) {
+        return _secondCell;
     }else
     {
         UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:(UITableViewCellStyleDefault) reuseIdentifier:nil];
@@ -178,7 +193,7 @@
         buttomview.backgroundColor = [UIColor lightGrayColor];
         buttomview.alpha = 0.3;
         
-        if (indexPath.section==1) {
+        if (indexPath.section==2) {
             if (indexPath.row==0) {
                 [cell.contentView addSubview:topview];
                 [cell.imageView setImage:[UIImage imageNamed:@"price"]];

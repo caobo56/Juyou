@@ -14,6 +14,11 @@
 
 #define HexRGBAlpha(rgbValue,a) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:(a)]
 #define NavBgColor  HexRGBAlpha(0x268cff, 1.0)
+
+#define lightTextColor  [UIColor colorWithRed:0.404 green:0.404 blue:0.404 alpha:1.00]
+#define darkTextColor  [UIColor colorWithRed:0.133 green:0.145 blue:0.165 alpha:1.00]
+#define cellLineColorTp HexRGBAlpha(0xd1d8df, 1.0)
+
 #define Screen_weight [UIScreen mainScreen].bounds.size.width
 #define Screen_height [UIScreen mainScreen].bounds.size.height
 

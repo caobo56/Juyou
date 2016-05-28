@@ -15,9 +15,8 @@
 
 @end
 
-@interface PresonalHeadView : UIView
+@interface PresonalHeadView : UITableViewCell
 
-@property (nonatomic,strong) LJHeadImageCell * head;
 @property (nonatomic,strong) UILabel * monthPayLable;
 @property (nonatomic,strong) UILabel * enableCreditLable;
 
